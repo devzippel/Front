@@ -1,0 +1,937 @@
+.container {
+  min-height: 99vh;
+  min-width: 96vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  contain: paint;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  max-width: 100vw;
+  justify-content: center;
+}
+
+.containerStake {
+  margin-top: 80px;
+  min-height: 99vh;
+  min-width: 96vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  contain: paint;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  max-width: 100vw;
+}
+
+.content {
+  max-width: 1204px;
+  width: 100%;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.hero {
+  padding-bottom: 128px;
+}
+
+.topo {
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.topo1 {
+  padding-left: 2rem;
+  padding-top: 5rem;
+  max-width: 400px;
+  text-align: justify;
+}
+
+
+@media (max-width: 500px) {
+  .topo {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .topo1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.botton {
+  padding-top: 1000px;
+  position: relative;
+  width: clamp(1000px, calc(59.6vw + 776px), 1540px);
+}
+
+.heroBackground {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  min-width: 100vw;
+  max-width: 100vw;
+  height: clamp(1000px, calc(59.6vw + 576px), 1540px);
+  pointer-events: none;
+}
+
+.topo2 {
+  position: relative;
+  max-width: 400px;
+  text-align: justify;
+
+}
+
+@media (max-width: 500px) {
+  .topo2 {
+    flex-direction: column;
+  }
+}
+
+.heroAssetFrame1 {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: right;
+  margin: 14px auto 0;
+  padding: 1em;
+  overflow: hidden;
+  padding-top: 5rem;
+}
+
+.heroBackgroundD {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  min-width: 100vw;
+  max-width: 100vw;
+  height: clamp(1000px, calc(59.6vw + 576px), 1540px);
+  pointer-events: none;
+  ;
+
+}
+
+
+
+.gradient {
+  height: 100%;
+  width: 100%;
+  opacity: 0.76;
+}
+
+.blueText {
+  color: #7cb3d7;
+}
+
+.heroAssetFrame {
+  display: flex;
+  justify-content: right;
+  margin: 14px auto 0;
+  padding: 1em;
+  overflow: hidden;
+  padding-top: 5rem;
+}
+
+.heroAsset {
+  max-width: 100vw;
+  margin-bottom: 16px;
+}
+
+.heroBodyContainer {
+  width: 100%;
+  padding: 10 10px;
+  margin: 0 auto;
+}
+
+.heroBody {
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroTitle {
+  margin-top: clamp(-30px, calc(-7vw + 57px), 5px);
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: Min(12vw, 80px);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-align: center;
+  overflow: visible;
+  letter-spacing: -0.05em;
+}
+
+.heroTitleGradient {
+  padding-right: 12px;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.heroSubtitle {
+  max-width: 600px;
+  margin: 0 0 40px;
+  color: hsla(0, 0%, 100%, 0.4);
+  font-size: Min(3.8vw, 20px);
+  letter-spacing: 0.3px;
+  line-height: 140%;
+  text-align: center;
+  transform: translateY(5px);
+}
+
+.heroCtaContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  max-width: 100%;
+  height: auto;
+
+}
+
+.codeButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 560px;
+  max-width: 100%;
+  height: 48px;
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  background-color: transparent;
+  border: 2px solid hsla(0, 0%, 100%, 0.1);
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+/* Place a $  before the code button text */
+.codeButton::before {
+  content: "$ ";
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  margin-right: 8px;
+}
+
+.codeButton:hover {
+  cursor: pointer;
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.codeButtonCopy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100%;
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  opacity: 0.9;
+}
+
+@media (max-width: 750px) {
+  .purple {
+    max-height: 10rem;
+    max-width: 26rem;
+       
+  }
+}
+@media (max-width: 750px) {
+  .crypto {
+    max-height: 24rem;
+    max-width: 15rem;
+       
+  }
+}
+@media (max-width: 750px) {
+  .roadmap {
+    max-height:16rem;
+    max-width: 26rem;
+       
+  }
+}
+@media (max-width: 750px) {
+  .porco {
+    max-height: 20rem;
+    max-width: 20rem;
+       
+  }
+}
+ 
+.heroCta {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 40px;
+  border: 3px solid hsla(293, 50%, 46%, 0.1);
+  margin: 16px 0;
+  background-clip: padding-box;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  border-radius: 8px;
+  color: #752d51;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  transition: opacity 0.2s;
+  width: 280px;
+}
+
+.heroCta::before {
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  right: 5px;
+  bottom: 0;
+  left: 5px;
+  background: conic-gradient(from 147.14deg at 50% 50%,
+      var(--color-primary) -35.68deg,
+      var(--color-secondary) 113.23deg,
+      var(--color-tertiary) 175deg,
+      var(--color-quaternary) 304.32deg,
+      var(--color-primary) 473.23deg);
+  border-radius: 6px;
+  content: "";
+  filter: blur(20px);
+  opacity: 0.6;
+}
+
+.heroImage {
+  margin-top: 1px;
+
+}
+
+.heroCta:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.secondaryCta1 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  transition: background-color 0.2s;
+  width: 280px;
+  border: 1px solid hsla(0, 0%, 100%, 0.25);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.15s ease-in-out;
+  
+}
+
+.secondaryCta {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  transition: background-color 0.2s;
+  width: 280px;
+  border: 2px solid hsla(198, 36%, 57%, 0.25);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.15s ease-in-out;
+  background-color: hsla(197, 28%, 59%, 0.432);
+
+}
+
+.widthButton {
+  width: 150px;
+  border: 1px solid hsla(0, 0%, 100%, 0.25);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.secondaryCta:hover {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+.secondaryCta1:hover {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+.tabs {
+  margin-top: 2em;
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.tab {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5em 0.75em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  background-color: transparent;
+  transition: all 0.15s ease-in-out;
+  width: 20%;
+  height: 100%;
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.activeTab {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tab:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tabContent {
+  transition: all 0.5s ease-in-out;
+}
+
+.transition {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.link {
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.code {
+  background-color: #0d0d18;
+  color: white;
+  padding: 8px 4px;
+  border-radius: 8px;
+}
+
+.list {
+  margin-top: 1em;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.list li {
+  margin-bottom: 1em;
+}
+
+/* Screens smaller than 750px */
+@media (max-width: 750px) {
+  .tabs {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .tab {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .topo {
+    flex-direction: column;
+  }
+}
+
+/* Less than 640 px */
+@media (max-width: 640px) {
+  .gradient {
+    margin-top: 256px;
+  }
+
+  .heroTitle {
+    margin-top: -48px;
+    font-size: 38px;
+  }
+
+  .heroCtaContainer {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .heroAsset {
+    max-height: 270px;
+  }
+}
+
+/* Above 640 and less than 960 */
+@media (min-width: 640px) and (max-width: 960px) {
+  .gradient {
+    margin-top: 196px;
+  }
+
+  .heroTitle {
+    margin-top: -32px;
+    font-size: 60px;
+  }
+
+  .heroAsset {
+    max-height: 540px;
+  }
+}
+
+.header {
+  width: 100%;
+  margin-left: 200%;
+}
+
+.topHeader {
+  display: flex;
+  align-items: center;
+  color: #bbbbbb;
+  height: 3rem;
+  font-size: 0.95rem;
+  padding-left: 11.5rem;
+
+
+}
+
+.h1 {
+  margin-bottom: 0px;
+}
+
+.explain {
+  font-size: 1.125rem;
+  max-width: 1200px;
+}
+
+.divider {
+  width: 50%;
+  border-color: grey;
+  opacity: 0.25;
+}
+
+.smallDivider {
+  width: 25%;
+  border-color: grey;
+  margin-top: 64px;
+  opacity: 0.25;
+}
+
+.nftBoxGrid {
+  width: 650px;
+  max-width: 85vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.nftBox {
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  width: 35%;
+  min-height: 300px;
+  padding: 16px
+}
+
+.optionSelectBox {
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  width: 48%;
+  min-height: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+}
+
+.selectBoxTitle {
+  font-size: 1.75rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.selectBoxDescription {
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 0px;
+}
+
+/* Between 1200 and 800 */
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .nftBox {
+    width: 49%;
+    margin-top: 16px;
+  }
+}
+
+/* beneath 800
+*/
+@media only screen and (max-width: 800px) {
+  .nftBoxGrid {
+    justify-content: center;
+  }
+
+  .nftBox {
+    width: 90%;
+    margin-top: 16px;
+  }
+
+  .optionSelectBox {
+    width: 90%;
+    margin-top: 16px;
+  }
+}
+
+.tokenGrid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+  width: 1400px;
+  max-width: 95vw;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.tokenItem {
+  width: 25%;
+  height: 100px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  gap: 16px;
+}
+
+.tokenLabel {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Second tokenLabel item */
+
+.tokenValue {
+  font-size: 1.3rem;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+/* On Mobile, make tokenGrid 100% width */
+@media only screen and (max-width: 850px) {
+  .tokenItem {
+    width: 90%;
+    margin-top: 12px;
+  }
+}
+
+/* Screen less than 630, then hide .center */
+@media only screen and (max-width: 630px) {
+  .center {
+    display: none;
+  }
+}
+
+.spacerTop {
+  margin-top: 16px;
+}
+
+.bigSpacerTop {
+  margin-top: 32px;
+}
+
+.spacerBottom {
+  margin-bottom: 16px;
+}
+
+.detailPageHr {
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+.nftMedia {
+  width: 50%;
+  max-height: 180px;
+  max-width: 180px;
+  border-radius: 15px;
+}
+
+
+/**------------------------------------------------------------------------------------*/
+
+.bloco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.titulo {
+  text-align: left;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.exchange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  background-color: #1b2129;
+  border-radius: 15px;
+  padding: 2.5rem;
+  border: 0.1px solid #6da4c4;
+  transition: background-color 0.2s;
+  height: 60px;
+  border-radius: 8px;
+  transition: all 0.15s ease-in-out;
+
+}
+
+@media (max-idth: 768px) {
+  .bloco {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exchange {
+    margin: 10px 0;
+  }
+}
+
+.listInline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .listInline {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.listInline:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.listInline:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  contain: paint;
+  padding: 2rem;
+}
+
+
+.text {
+  width: 380px;
+  height: 200px;
+  text-align: justify;
+  padding: 2rem;
+
+}
+
+.textdois {
+  justify-content: center;
+  width: 320px;
+  height: 320px;
+  text-align: justify;
+  padding: 1rem;
+  border: 0.1px solid #6da4c4;
+  background-color: #1b2129;
+  border-radius: 25px;
+  margin: 1rem;
+  font-size: 20px;
+}
+
+
+
+.blueText {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textdois {
+    padding: 1rem;
+    margin: 10px;
+    
+  }
+
+  .blueText {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+
+  .text {
+    padding: 10px;
+    width: 20rem;
+  }
+
+  .blueText {
+    font-size: 18px;
+  }
+}
+
+.copy {
+  max-width: 50rem;
+  justify-content: center;
+  display: flex;
+  padding: rem;
+  border: 0.2px solid #6da4c4;
+  background-color: #1b2129;
+  border-radius: 20px;
+  margin: 3rem;
+  font-size: 16px;
+  align-items: center;
+  color: #7cb3d7;
+  height: 200px;
+  display: flex;
+}
+
+.buttonCopy {
+  padding: rem;
+  width: 300px;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.secondaryCta {
+  width: 180px;
+  margin: 1rem;
+  color: hsla(0, 0%, 100%, 0.4);
+}
+
+
+.quadro {
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: background-color 0.2s;
+  padding: 20px;
+  margin: 0.5rem;
+  border: 2px solid hsla(198, 36%, 57%, 0.35);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsla(0, 0%, 100%, 0.4);
+  border-radius: 8px;
+  
+
+}
+.h3{
+  text-align: left;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .exchange img {
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+.button1{
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 368px) {
+  .copy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }}
+
+@media (max-width: 768px) {
+  .button1 {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .secondaryCta .secondaryCta {
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .quadro{
+    font-size: 13px;
+     
+  }
+}

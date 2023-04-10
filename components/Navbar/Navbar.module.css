@@ -1,0 +1,204 @@
+.navContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  background-color: transparent !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+}
+
+.nav {
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  max-width: 1360px;
+  background-color: rgba(26, 28, 31, 0.9);
+  box-shadow: 0px 2px 6px rgb(56, 40, 85, 0.5);
+}
+
+.blueText {
+  color: #7cb3d7;
+}
+
+.navLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.15s ease-in-out;
+}
+
+
+.navMiddle { 
+  display: flex;
+  margin-left: 12px;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+
+.link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+  padding: 0.5rem;
+  cursor: pointer;
+
+}
+
+.submenu {
+  position: absolute;
+  top: calc(70% + 1px);
+  /* Define a posição do submenu abaixo do botão "NFT" */
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  z-index: 1;
+  /* Define a ordem de empilhamento do submenu */
+
+}
+
+.submenu .link {
+  margin: 0.2rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #2B233E;
+  border-radius: 5px;
+  width: 6rem;
+  text-align: center;
+}
+
+
+.link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+.homeLink:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.profileImage {
+  margin-top: 6px;
+  transition: all 0.15s ease-in-out;
+}
+
+.profileImage:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.homeLink {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.buttonLink:hover {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.15s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.sidebar {
+  margin-top: 5.5rem;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(26, 28, 31, 0.9);
+  transition: left 0.3s ease-in-out;
+  overflow-y: scroll;
+  box-shadow: 0px 2px 6px rgb(56, 40, 85, 0.5);
+
+
+}
+
+.sidebar.open {
+  left: 0;
+
+}
+
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger {
+  background: #00bfff;
+  color: #fff;
+  opacity: 0.1;
+}
+
+.sider {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  transition: background-color 0.2s;
+  width: 180px;
+  border: 1px solid hsla(0, 0%, 100%, 0.6);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-radius: 8px;
+  transition: all 0.15s ease-in-out;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.btn {
+  background-color: rgb(66, 46, 106, 0.3) !important;
+  border: 1px solid hsla(0, 0%, 100%, 0.25)!important;
+  width: fit-content !important;
+  color: white !important;
+}
