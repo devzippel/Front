@@ -5,7 +5,7 @@ export const nftDropContractAddress = "0x35558Ae78839026aF218ce444965F2bEC9B9c97
 export const tokenContractAddress = "0x3557E821818A6784be524F71113a869f3f9FCE76"; //Token
 export const stakingContractAddress = "0xad11392311bAB12e0fC174C30A6A8A70Fd31BD44"; // contrato NFT nova
 
-export const NFT_COLLECTION_ADDRESS = nftDropContractAddress;
+export const NFT_COLLECTION_ADDRESS = "0x35558Ae78839026aF218ce444965F2bEC9B9c97D";
 
 
 export const MARKETPLACE_ADDRESS = "0x361D14746b7780cc986877AfB8a42FE20b569F01";
