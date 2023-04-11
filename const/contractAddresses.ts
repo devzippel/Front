@@ -8,7 +8,7 @@ export const stakingContractAddress = "0x00E14c0B7c0DC1f2D2C95E3fc285ead091F3426
 export const NFT_COLLECTION_ADDRESS = nftDropContractAddress;
 
 
-export const MARKETPLACE_ADDRESS = "0x3b9E5f7bF109dDfAfd8d0b38039ec7891eFcF583";
+export const MARKETPLACE_ADDRESS = "0x361D14746b7780cc986877AfB8a42FE20b569F01";
 
 // 3. The address of your NFT collection smart contract.
 
