@@ -164,6 +164,41 @@
 
 }
 
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.hamburger-icon {
+  font-size: 20px;
+ 
+}
+
+.hamburger-icon.close {
+  transform: rotate(45deg);
+}
+
+.hamburger-icon.close:before {
+  transform: rotate(-90deg);
+  top: 0;
+}
+
+.hamburger-icon.close:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
 
 @media (min-width: 768px) {
   .hamburger {
@@ -171,11 +206,6 @@
   }
 }
 
-.hamburger {
-  background: #00bfff;
-  color: #fff;
-  opacity: 0.1;
-}
 
 .sider {
   color: #fff;
@@ -202,3 +232,4 @@
   width: fit-content !important;
   color: white !important;
 }
+
