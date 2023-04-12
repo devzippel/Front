@@ -73,25 +73,25 @@ export function Navbar() {
           </button>
           <div className={`${styles.sidebar} ${sidebarOpen ? styles.open : ""}`}>
             <ul>
-                <Link href="/" className={styles.sider} >
+                <Link href="/" className={styles.sider} onClick={handleSidebar}>
                 🏠 Home
                 </Link>
-                <Link href="/stakeToken" className={styles.sider} >
+                <Link href="/stakeToken" className={styles.sider} onClick={handleSidebar}>
                 🪙  Stake Token
                 </Link>
-                <Link href="/stakeNFT" className={styles.sider} >
+                <Link href="/stakeNFT" className={styles.sider} onClick={handleSidebar}>
                 🖼  Stake NFT
                 </Link>
                 
-                <Link href="/mint" className={styles.sider}>
+                <Link href="/mint" className={styles.sider} onClick={handleSidebar}>
                 🖼 Mint NFT
                 </Link>
 
-                <Link href="/buy" className={styles.sider}>
+                <Link href="/buy" className={styles.sider} onClick={handleSidebar}>
                 🛒 Market BUY
                 </Link>    
 
-                 <Link href="/sell" className={styles.sider}>
+                 <Link href="/sell" className={styles.sider} onClick={handleSidebar}>
                 🛒 Market SELL
                  </Link>               
             </ul>
