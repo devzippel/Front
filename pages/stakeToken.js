@@ -13,7 +13,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "/styles/StakeToken.module.css";
 
-const stakingContractAddress = "0xaee1bd008d26fA53e26216fd96784C2544cd05AE";
+const stakingContractAddress = "0xD80940881E2486c044C547B4351B060710CCFAe2";
 
 export default function Home() {
   const address = useAddress();
