@@ -1,14 +1,14 @@
 import {BinanceTestnet } from "@thirdweb-dev/chains";
 export const NETWORK = BinanceTestnet;
 
-export const nftDropContractAddress = "0x35558Ae78839026aF218ce444965F2bEC9B9c97D"; //NFT
-export const tokenContractAddress = "0x3557E821818A6784be524F71113a869f3f9FCE76"; //Token
-export const stakingContractAddress = "0xad11392311bAB12e0fC174C30A6A8A70Fd31BD44"; // contrato NFT nova
+export const nftDropContractAddress = "0x0Ac7f06E40A5dD2AEdf4874614B7278A66639aAb"; //NFT
+export const tokenContractAddress = "0xe04276f1021e5e74dc95F01E17d7cD9a298DDCDd"; //Token
+export const stakingContractAddress = "0xd4c2518E1411b7c14b14f586bf59d547B4AD816a"; // contrato NFT nova
 
-export const NFT_COLLECTION_ADDRESS = "0x35558Ae78839026aF218ce444965F2bEC9B9c97D";
+export const NFT_COLLECTION_ADDRESS = "0x0Ac7f06E40A5dD2AEdf4874614B7278A66639aAb";
 
 
-export const MARKETPLACE_ADDRESS = "0x361D14746b7780cc986877AfB8a42FE20b569F01";
+export const MARKETPLACE_ADDRESS = "0x967a69b66B3123a5145D863501dd2944cfc26f72";
 
 // 3. The address of your NFT collection smart contract.
 
