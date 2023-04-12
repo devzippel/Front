@@ -64,13 +64,13 @@ export function Navbar() {
       <nav className={styles.nav}>
         <div className={styles.navLeft}>
           {/***********Menu sidebar******************************************************************* */}
-          <button className={styles.hamburger} onClick={handleSidebar}>
+          <div className={styles.hamburger} onClick={handleSidebar}>
             {sidebarOpen ? (
-              <FontAwesomeIcon icon={faTimes} size="2x" />
+              <FontAwesomeIcon icon={faTimes} size="3x" />
             ) : (
-              <FontAwesomeIcon icon={faBars} size="2x" />
+              <FontAwesomeIcon icon={faBars} size="3x" />
             )}
-          </button>
+          </div>
           <div className={`${styles.sidebar} ${sidebarOpen ? styles.open : ""}`}>
             <ul>
                 <Link href="/" className={styles.sider} onClick={handleSidebar}>
