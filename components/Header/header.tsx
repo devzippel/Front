@@ -39,10 +39,10 @@ export default function Header() {
         // Executa a função a primeira vez
         getEthPrice();
 
-        // Executa a função a cada 10 minutos
+        // Executa a função a cada 20 minutos
         const interval = setInterval(() => {
             getEthPrice();
-        }, 10 * 60 * 1000);
+        }, 20 * 60 * 1000);
 
         // Limpa o intervalo quando o componente for desmontado
         return () => clearInterval(interval);
