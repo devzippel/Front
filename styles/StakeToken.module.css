@@ -74,6 +74,7 @@
 .stakeContainer {
   display: flex;
   margin-bottom: 2rem;
+  
 }
 
 .hero {
@@ -239,7 +240,7 @@
 @media (max-width: 768px) {
   .textbox {
     max-width: 50%;
-    width: 170px;
+    width: 175px;
     padding: auto;    
     margin-left: 1rem;
   }
@@ -251,3 +252,37 @@
     margin-right: 10px;
   }
 }
+
+/************************************************************/
+
+
+.porcentagem{
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  
+}
+.porcent{
+  background-color: rgba(15, 12, 22, 0.3) !important;
+  padding: 6px !important;  
+  height: 25px;
+  margin-right: 0.4rem;
+  margin-bottom: 5px;
+  border-radius: 10px !important;
+  color: hsla(0, 0%, 100%, 0.6) !important;
+  font-size: 12px !important;
+    
+}
+@media (max-width: 768px) {
+  .porcent {
+    padding: 5px !important;
+    font-size: 6px
+  }
+}
+@media (max-width: 768px) {
+  .porcentagem {
+    max-width: 40%;
+    margin-right: 50px;
+  }
+}
+ 
