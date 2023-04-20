@@ -13,11 +13,13 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "/styles/StakeToken.module.css";
 
-const stakingContractAddress = "0xD80940881E2486c044C547B4351B060710CCFAe2";
+const stakingContractAddress = "0x1c858295C0fEEbb372e2E6589CBc26D9D5DC52b7";
 
 export default function Home() {
   const address = useAddress();
   const [amountToStake, setAmountToStake] = useState(0);
+  const [amountToWithdraw, setAmountToWithdraw] = useState(0);
+
 
   // Initialize all the contracts
   const { contract: staking, isLoading: isStakingLoading } = useContract(
@@ -61,6 +63,38 @@ export default function Home() {
     refetchStakingTokenBalance();
     refetchStakingInfo();
   };
+  const initialValue = 0;
+  
+  /** Lógica do segundo input */
+  const [retirar, setRetirar] = useState(stakeInfo && parseFloat(ethers.utils.formatEther(stakeInfo[0].toString())) || 0);
+  const [novoRetirar, setNovoRetirar] = useState(0);
+
+  useEffect(() => {
+    setRetirar(stakeInfo && parseFloat(ethers.utils.formatEther(stakeInfo[0].toString())) || 0);
+  }, [stakeInfo && parseFloat(ethers.utils.formatEther(stakeInfo[0].toString()))]);
+  
+  const handlePorcentagemRetirar = (porcentagem) => {
+    const novoRetirar = retirar * porcentagem / 100;
+    setNovoRetirar(novoRetirar);
+    setAmountToWithdraw(novoRetirar.toFixed(2));
+    
+  };
+  
+   /** Lógica do primeiro input */
+  const [valor, setValor] = useState(parseFloat(stakingTokenBalance?.displayValue) || 0);
+  const [novoValor, setNovoValor] = useState(0);
+
+  useEffect(() => {
+    setValor(parseFloat(stakingTokenBalance?.displayValue) || 0);
+  }, [stakingTokenBalance?.displayValue]);
+  
+
+  const handlePorcentagem = (porcentagem) => {
+    const novoValor = valor * porcentagem / 100;
+    setNovoValor(novoValor);
+    setAmountToStake(novoValor.toFixed(2));
+    
+  };
 
   return (
     <div className={styles.resp}>
@@ -101,15 +135,25 @@ export default function Home() {
                 <p className={styles.description}>
                   Stake certain amount and get reward tokens back!
                 </p>
-
+                <a className={styles.card}>
+                  <p>{valor.toFixed(2)} PUPPETS</p>
+                </a>  
+                  <div>   
+                      <div className={styles.porcentagem}>
+                        <button className={styles.porcent} onClick={() => handlePorcentagem(25)}>25%</button>
+                        <button className={styles.porcent} onClick={() => handlePorcentagem(50)}>50%</button>
+                        <button className={styles.porcent} onClick={() => handlePorcentagem(75)}>75%</button>
+                        <button className={styles.porcent} onClick={() => handlePorcentagem(100)}>100%</button>
+                      </div>
+                    
                 <div className={styles.stakeContainer}>
                   <input
                     className={styles.textbox}
                     type="number"
                     value={amountToStake}
                     onChange={(e) => setAmountToStake(e.target.value)}
+                    placeholder= {novoValor.toFixed(2)}
                   />
-
                   <Web3Button
                     className={styles.button}
                     contractAddress={stakingContractAddress}
@@ -127,19 +171,26 @@ export default function Home() {
                   >
                     Stake!
                   </Web3Button>
+                  </div>
                 </div>
                 <h2>Staked amount</h2>
                 <a className={styles.card}>
-                  <p>
-                    {stakeInfo && ethers.utils.formatEther(stakeInfo[0].toString())}
-                  </p>
+                  <p>{Number(retirar).toFixed(2)} PUPPETS</p>
                 </a>
+              <div>
+                  <div className={styles.porcentagem}>
+                        <button className={styles.porcent} onClick={() => handlePorcentagemRetirar(25)}>25%</button>
+                        <button className={styles.porcent} onClick={() => handlePorcentagemRetirar(50)}>50%</button>
+                        <button className={styles.porcent} onClick={() => handlePorcentagemRetirar(75)}>75%</button>
+                        <button className={styles.porcent} onClick={() => handlePorcentagemRetirar(100)}>100%</button>
+                  </div>
                 <div className={styles.stakeContainer}>
-                  <input
+                <input
                     className={styles.textbox}
                     type="number"
-                    value={amountToStake}
-                    onChange={(e) => setAmountToStake(e.target.value)}
+                    value={amountToWithdraw}
+                    onChange={(e) => setAmountToWithdraw(e.target.value)}
+                    placeholder= {novoRetirar.toFixed(2)}
                   />
 
                   <Web3Button
@@ -147,24 +198,23 @@ export default function Home() {
                     contractAddress={stakingContractAddress}
                     action={async (contract) => {
                       await contract.call("withdraw",
-                        ethers.utils.parseEther(amountToStake)
+                        ethers.utils.parseEther(amountToWithdraw)
                       );
                       alert("Tokens unstaked successfully!");
                     }}
                   >
                     Unstake!
                   </Web3Button>
-
+                  </div>
                 </div>
                 <h2>Current reward</h2>
                 <a className={styles.card}>
                   <p>
-                    {stakeInfo && ethers.utils.formatEther(stakeInfo[1].toString())}
+                      {stakeInfo && parseFloat(ethers.utils.formatEther(stakeInfo[1].toString())).toFixed(2)} PUPPETS
                   </p>
                 </a>
 
                 <div className={styles.grid}>
-
                   <Web3Button
                     className={styles.button}
                     contractAddress={stakingContractAddress}
@@ -186,3 +236,4 @@ export default function Home() {
     </div>
   );
 }
+
