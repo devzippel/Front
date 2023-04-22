@@ -104,7 +104,7 @@ export default function Home() {
     useEffect(() => {
       async function fetchStakingBalance() {
         try {
-          const response = await axios.get('http://localhost:8080/stakingbalance');
+          const response = await axios.get('https://app.puppetscoin.com/stakingbalance');
           setStakingBalance(response.data.stakingBalance);
         } catch (e) {
           console.log(`Something went wrong: ${e}`);
