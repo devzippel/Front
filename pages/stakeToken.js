@@ -257,7 +257,7 @@ export default function Home() {
                       action={async (contract) => {
                         await contract.call("claimRewards");
                         alert("Rewards claimed successfully!");
-                      }}
+                     }}
                     >
                       Claim rewards!
                     </Web3Button>
