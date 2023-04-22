@@ -10,7 +10,7 @@ import {
 
 import { ethers } from "ethers";
 import Image from "next/image";
-import styles from "/styles/StakeTokenMoralis.module.css";
+import styles from "/styles/StakeToken.module.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
