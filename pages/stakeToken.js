@@ -141,7 +141,7 @@ export default function Home() {
                     src="/hero-gradient.png"
                     width={1390}
                     height={1390}
-                    alt="Background gradient from red to blue"
+                    alt="Background gradient from red to  blue"
                     quality={100}
                     className={styles.gradient}
                   />
@@ -257,7 +257,7 @@ export default function Home() {
                       action={async (contract) => {
                         await contract.call("claimRewards");
                         alert("Rewards claimed successfully!");
-                     }}
+                      }}
                     >
                       Claim rewards!
                     </Web3Button>
@@ -272,3 +272,4 @@ export default function Home() {
     </div>
   );
 }
+
