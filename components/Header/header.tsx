@@ -64,17 +64,17 @@ export default function Header() {
                 >
                     <section className={styles.link}>
                         ${" "}
-                        <span className={styles.blueText}>{(Number(ethPrice) * 1000000000).toFixed(4).toLocaleString()} </span>
+                        <span className={styles.blueText}>{(Number(ethPrice) * 1000000).toFixed(4).toLocaleString()} </span>
                     </section>
                     {showText && (
                         <div className={styles.texto}>
-                            ~1 Billion de Puppets
+                            ~1 Million de Puppets
                         </div>
                     )}
                 </div>
             </section>
 
-            {address ? (
+           {/**  {address ? (
                 <section className={styles.navMiddle} >
                     <section>
                         Balance: ${" "}
@@ -87,7 +87,7 @@ export default function Header() {
                     Balance: $ 0
                     <span className={styles.blueText}></span>
                 </section>
-            )}
+            )}*/}
 
         </div>
 
