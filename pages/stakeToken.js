@@ -15,7 +15,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 
-const stakingContractAddress = "0x1c858295C0fEEbb372e2E6589CBc26D9D5DC52b7";
+const stakingContractAddress = "0x4951B6Cac448EE3732921DEbF5018C2AA074264a";
 
 export default function Home() {
   const address = useAddress();
