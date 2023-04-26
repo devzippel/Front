@@ -71,6 +71,8 @@
   padding: 0.5rem;
   z-index: 1;
   /* Define a ordem de empilhamento do submenu */
+  
+ 
 
 }
 
@@ -80,7 +82,7 @@
   color: rgba(255, 255, 255, 0.5);
   background-color: #2B233E;
   border-radius: 5px;
-  width: 6rem;
+  width: 8rem;
   text-align: center;
 }
 
@@ -238,4 +240,7 @@
     height: 52px;
     margin-top: 10px;
   }
+}
+.soon{
+  color: red;
 }
