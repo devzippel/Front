@@ -1,5 +1,5 @@
-import {BinanceTestnet } from "@thirdweb-dev/chains";
-export const NETWORK = BinanceTestnet;
+import {Binance } from "@thirdweb-dev/chains";
+export const NETWORK = Binance;
 
 export const nftDropContractAddress = "0x0Ac7f06E40A5dD2AEdf4874614B7278A66639aAb"; //NFT new
 export const tokenContractAddress = "0xe04276f1021e5e74dc95F01E17d7cD9a298DDCDd"; //Token new
