@@ -13,7 +13,7 @@ library.add(fab, faCoffee, faFire)
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (    
-    <ThirdwebProvider activeChain="binance-testnet">
+    <ThirdwebProvider activeChain="binance">
       {/* Progress bar when navigating between pages */}
       <NextNProgress
         color="var(--color-tertiary)"
