@@ -79,20 +79,20 @@ export function Navbar() {
                 <Link href="/stakeToken" className={styles.sider} onClick={handleSidebar}>
                 🪙  Stake Token
                 </Link>
-                <Link href="/stakeNFT" className={styles.sider} onClick={handleSidebar}>
-                🖼  Stake NFT
+                <Link href="" className={styles.sider} onClick={handleSidebar}>
+                🖼  Stake NFT <span className={styles.soon}>Soon</span>
                 </Link>
                 
-                <Link href="/mint" className={styles.sider} onClick={handleSidebar}>
-                🖼 Mint NFT
+                <Link href="" className={styles.sider} onClick={handleSidebar}>
+                🖼 Mint NFT <span className={styles.soon}>Soon</span>
                 </Link>
 
-                <Link href="/buy" className={styles.sider} onClick={handleSidebar}>
-                🛒 Market BUY
+                <Link href="" className={styles.sider} onClick={handleSidebar}>
+                🛒 BUY <span className={styles.soon}>Soon</span>
                 </Link>    
 
-                 <Link href="/sell" className={styles.sider} onClick={handleSidebar}>
-                🛒 Market SELL
+                 <Link href="" className={styles.sider} onClick={handleSidebar}>
+                🛒 SELL <span className={styles.soon}>Soon</span>
                  </Link>               
             </ul>
           </div>
@@ -118,18 +118,18 @@ export function Navbar() {
             > 🪙 Stake
               {showStakeSubMenu && (
                 <div className={styles.submenu}>
-                  <Link href="/stakeNFT" className={styles.link}>
-                    🖼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NFT    &nbsp;&nbsp;
+                  <Link href="" className={styles.link}>
+                    🖼 &nbsp;NFT <span className={styles.soon}>Soon</span>
                   </Link>
                   <Link href="/stakeToken" className={styles.link}>
-                    🪙&nbsp;&nbsp;&nbsp;&nbsp;Token
+                    🪙 &nbsp;Stake Token &nbsp;&nbsp;
                   </Link>
                 </div>
               )}
             </div>
-            <Link href="/mint" className={styles.link}>
-              🖼 Mint
-            </Link>
+            {/**<Link href="" className={styles.link}>
+              🖼 Mint 
+              </Link>*/}
             <div
               className={styles.link}
               onMouseEnter={handleMarketMouseEnter}
@@ -137,11 +137,11 @@ export function Navbar() {
             >🛒 Market
               {showMarketSubMenu && (
                 <div className={styles.submenu}>
-                  <Link href="/buy" className={styles.link}>
-                    🖼&nbsp;&nbsp;&nbsp;&nbsp;  Buy  &nbsp;&nbsp;
+                  <Link href="" className={styles.link}>
+                    🖼 &nbsp;Buy <span className={styles.soon}>Soon</span>
                   </Link>
-                  <Link href="/sell" className={styles.link}>
-                    🪙&nbsp;&nbsp;&nbsp;&nbsp;  Sell &nbsp;&nbsp;
+                  <Link href="" className={styles.link}>
+                    🪙 &nbsp;Sell <span className={styles.soon}>Soon</span>
                   </Link>
                 </div>
               )}
