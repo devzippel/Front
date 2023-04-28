@@ -1,72 +1,85 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import React, { Component } from 'react';
+import Link from "next/link";
+import styles from "./Footer.module.css";
+import React, { Component } from 'react';;
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faInstagram, faDiscord, faTelegram, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faCoins, faCopy } from '@fortawesome/free-solid-svg-icons';
+
+
+
 
 export default function Footer() {
-return (
-    <footer className="">
-    <div className={styles.container}>
-        <div className="row justify-content-center">
-            <div>
-                
-                <div>
-                    
-                    <a className="" href="index.html">
-                        <Image src="/logo.png" alt=""/>
-                    </a>
-                    
-                    <div >
 
-                        <a className="twitter" href="https://twitter.com/PuppetsArts" target="_blank">
-                            <i className="icon-social-twitter"></i>
-                            <i className="icon-social-twitter"></i>
-                        </a>
-                        <a className="linkedin" href="https://www.instagram.com/puppetsarts/" target="_blank">
-                            <i className="icon-social-instagram"></i>
-                            <i className="icon-social-instagram"></i>
-                        </a>
-                        <a className="linkedin" href="https://t.me/PuppetsArtsCoin" target="_blank">
-                            <i className="icon-paper-plane"></i>
-                            <i className="icon-paper-plane"></i>
-                        </a>
-                        <a className="facebook" href="https://www.facebook.com/PuppetsArtsCoin" target="_blank">
-                            <i className="icon-social-facebook"></i>
-                            <i className="icon-social-facebook"></i>
-                        </a>
+    const [isCopied, setIsCopied] = useState(false);
+    const address = '0xdA2c0CDf7d764F8C587380CAdF7129E5eCb7Efb7';
+  
+    const handleCopyClick = async () => {
+      try {
+        await navigator.clipboard.writeText(address);
+        setIsCopied(true);
+  
+        // Reset the button state after 2 seconds
+        setTimeout(() => setIsCopied(false), 2000);
+      } catch (err) {
+        console.error('Failed to copy text: ', err);
+      }
+    }
+
+    return (
+
+        <div>
+            <div className="row justify-content-center">
+
+                <div>
+                    <div>
+
+                        
+                        <div className={styles.linha}>
+                            <a className={styles.linha} href="https://twitter.com/PuppetsArts" target="_blank">
+                                <FontAwesomeIcon icon={faTwitter}  />
+                            </a>
+                            <a className={styles.linha} href="https://www.instagram.com/puppetsarts/" target="_blank">
+                                <FontAwesomeIcon icon={faInstagram} size="1x" />                                
+                            </a>
+                            <a className={styles.linha} href="https://discord.gg/vr2q4DUcZN"
+                                target="_blank">
+                                <FontAwesomeIcon icon={faDiscord} size="1x" />                               
+                            </a>
+                            <a className={styles.linha} href="https://t.me/PuppetsArtsCoin" target="_blank">
+                                <FontAwesomeIcon icon={faTelegram} size="1x" />
+                            </a>
+                            <a className={styles.linha} href="https://www.facebook.com/PuppetsArtsCoin" target="_blank">
+                                <FontAwesomeIcon icon={faFacebook} size="1x" />
+                            </a>
+                        </div>
+
+                        <ul className={styles.listInline}>
+                            <li className={styles.listInline}><a href="https://puppetsarts.medium.com/"
+                                target="_blank">Medium</a></li>
+                            <li className={styles.listInline}><a href="https://puppets-arts-coin.gitbook.io/puppets-coin/"                          target="_blank">Whitepaper</a></li>                            
+                        </ul>
+                        <div className={styles.quadro}> 0xdA2c0C...9E5eCb7Efb7 
+                        <div onClick={handleCopyClick} style={{ cursor: 'pointer', margin: '4px' }}>
+                             <FontAwesomeIcon icon={faCopy} />
+                        </div>
+                            {isCopied && <div>Copied!</div>}
+                        </div>
+
+                        <div className={styles.email}>contato@puppetscoin.com</div>
 
                     </div>
-                    <ul className="list-inline">
-                        <li className="list-inline-item"><a
-                                href="https://app.unicrypt.network/amm/pancake-v2/pair/0xA78BcC11Fae66b81cA65868DFb5e673A22277433"
-                                target="_blank">Liquidity Lock</a></li>
-                        <li className="list-inline-item"><a href="https://puppetsarts.medium.com/"
-                                target="_blank">Medium</a></li>
-                        <li className="list-inline-item"><a
-                                href="https://puppets-arts-coin.gitbook.io/puppets-arts/"
-                                target="_blank">Whitepaper</a></li>
-                        <li className="list-inline-item"><a href="https://opensea.io/collection/puppetsarts"
-                                target="_blank">OpenSea</a></li>
-                        <li className="list-inline-item"><a href="https://tofunft.com/collection/puppets-arts/items"
-                                target="_blank">TofuNFT</a></li>
 
-                    </ul>
-                    
-                    <div className="copyright-area py-2">contato@puppetsarts.com</div>
-                    
-                    <div className="copyright-area py-4">&copy;2023 Puppets Arts, All Rights Reserved</div>
-                </div>
 
-                
-                <div id="scroll-to-top" className="scroll-to-top">
-                    <a href="#header" className="smooth-anchor">
-                        <i className="fa-solid fa-arrow-up"></i>
-                    </a>
+                    <div id="scroll-to-top" className="scroll-to-top">
+                        <a href="#header" className="smooth-anchor">
+                            <i className="fa-solid fa-arrow-up"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-)
+
+    );
 }
