@@ -10,6 +10,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Footer from "../Footer/Footer";
 
 
 
@@ -95,7 +96,11 @@ export function Navbar() {
                 🛒 SELL <span className={styles.soon}>Soon</span>
                  </Link>               
             </ul>
+            <div>
+              <Footer/>
+            </div>
           </div>
+          
           {/****************************************************************************** */}
           <Link href="/" className={`${styles.homeLink} ${styles.navLeft}`}>
             <Image
@@ -157,6 +162,7 @@ export function Navbar() {
           </div>
         </div>
       </nav>
+      
     </div>
   );
 }
