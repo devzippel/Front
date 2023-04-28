@@ -107,7 +107,6 @@
   overflow: hidden;
   padding-top: 5rem;
 }
-
 .heroBackgroundD {
   position: absolute;
   z-index: -1;
@@ -121,9 +120,6 @@
   ;
 
 }
-
-
-
 .gradient {
   height: 100%;
   width: 100%;
@@ -874,7 +870,7 @@
 
 
 .quadro {
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1px;
   transition: background-color 0.2s;
   padding: 20px;
