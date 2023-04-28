@@ -15,7 +15,7 @@ import { faCoins, faCopy } from '@fortawesome/free-solid-svg-icons';
 const Home: NextPage = () => {
 
   const [isCopied, setIsCopied] = useState(false);
-  const address = '0x14bb7a637fab7ef189ddb052153239cf31892d8c';
+  const address = '0xdA2c0CDf7d764F8C587380CAdF7129E5eCb7Efb7';
 
   const handleCopyClick = async () => {
     try {
@@ -335,11 +335,11 @@ const Home: NextPage = () => {
               <p className={styles.blueText}>3% of our fees are added to our Stacke pool.
                 1% for Puppets Coin Token pool.
                 1% for NFT one Puppets Arts pool.
-                1% for the two Puppets Arts NFT pool</p>
+                1% this tax is used for project buy back or burn.</p>
             </div>
 
             <div className={styles.textdois}>
-              <h3 className={styles.h3}>1% Marketing & Development</h3>
+              <h3 className={styles.h3}>3% Marketing & Development</h3>
 
               <p className={styles.blueText}>We need to ensure that Puppets gets the proper exposure it needs to create a thriving community. This fee is used solely for new listing development and marketing purposes.</p>
             </div>
@@ -354,7 +354,7 @@ const Home: NextPage = () => {
                 BUY PUPPETS&nbsp;&nbsp; <FontAwesomeIcon icon={faCoins} />
               </Link>
               <div className={styles.quadro}> {address}
-                <div onClick={handleCopyClick} style={{ cursor: 'pointer', margin: '1px' }}>&nbsp;&nbsp;
+                <div onClick={handleCopyClick} style={{ cursor: 'pointer', margin: '3px' }}>
                   <FontAwesomeIcon icon={faCopy} />
                 </div>
                 {isCopied && <div>Copied!</div>}
@@ -447,7 +447,7 @@ const Home: NextPage = () => {
                   <li className={styles.listInline}><a href="https://puppetsarts.medium.com/"
                     target="_blank">Medium</a></li>
                   <li className={styles.listInline}><a
-                    href="https://puppets-arts-coin.gitbook.io/puppets-arts/"
+                    href="https://puppets-arts-coin.gitbook.io/puppets-coin/"
                     target="_blank">Whitepaper</a></li>
                   <li className={styles.listInline}><a href="https://opensea.io/collection/puppetsarts"
                     target="_blank">OpenSea</a></li>
