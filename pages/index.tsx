@@ -41,12 +41,13 @@ const Home: NextPage = () => {
               <p className={styles.blueText}>A token invented to bring utility to our NFTs and generate passive income for its holders. This is Puppets Coin.</p>
               <p>
                 <Link className={styles.heroCta}
-                  href="/stake">
+                  href="https://pancakeswap.finance/swap?outputCurrency=0xdA2c0CDf7d764F8C587380CAdF7129E5eCb7Efb7" 
+                  target="_blank">
                   Buy Puppets
                 </Link>
                 <Link
                   className={styles.secondaryCta1}
-                  href="/boxNFT"
+                  href="https://tofunft.com/collection/puppets-arts/items"
                   target="_blank"
                 >
                   Buy NFTs
@@ -219,7 +220,7 @@ const Home: NextPage = () => {
 
 
         <div className={styles.exchange}>
-          <Link href="" >
+          <Link href="https://pancakeswap.finance/swap?outputCurrency=0xdA2c0CDf7d764F8C587380CAdF7129E5eCb7Efb7" >
             <Image
               src="/PancakeSwap.png"
               width={200}
@@ -231,7 +232,7 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.exchange}>
-          <Link href="" >
+          <Link href="https://poocoin.app/tokens/0xda2c0cdf7d764f8c587380cadf7129e5ecb7efb7" >
             <Image
               src="/poocoin.png"
               width={200}
@@ -259,7 +260,7 @@ const Home: NextPage = () => {
 
 
         <div className={styles.exchange}>
-          <Link href="" >
+          <Link href="https://app.bogged.finance/bsc/swap?tokenIn=BNB&tokenOut&utm_source=telegram&utm_medium=tgbot&utm_campaign=PUPPETS" >
             <Image
               src="/BoggedFinance.png"
               width={200}
@@ -441,9 +442,6 @@ const Home: NextPage = () => {
 
                 </div>
                 <ul className={styles.listInline}>
-                  <li className={styles.listInline}><a
-                    href="https://app.unicrypt.network/amm/pancake-v2/pair/0xA78BcC11Fae66b81cA65868DFb5e673A22277433"
-                    target="_blank">Liquidity Lock</a></li>
                   <li className={styles.listInline}><a href="https://puppetsarts.medium.com/"
                     target="_blank">Medium</a></li>
                   <li className={styles.listInline}><a
