@@ -454,9 +454,9 @@ const Home: NextPage = () => {
 
                 </ul>
 
-                <div className={styles.listInline}>contato@puppetsarts.com</div>
+                <div className={styles.listInline}>contato@puppetscoin.com</div>
 
-                <div className={styles.listInline}>2023 Puppets Arts, All Rights Reserved</div>
+                <div className={styles.listInline}>2023 Puppets Coin, All Rights Reserved</div>
               </div>
 
 
