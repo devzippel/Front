@@ -37,7 +37,7 @@ export default function Footer() {
 
                         
                         <div className={styles.linha}>
-                            <a className={styles.linha} href="https://twitter.com/PuppetsArts" target="_blank">
+                            <a className={styles.linha} href="https://twitter.com/PuppetsCoin" target="_blank">
                                 <FontAwesomeIcon icon={faTwitter}  />
                             </a>
                             <a className={styles.linha} href="https://www.instagram.com/puppetsarts/" target="_blank">
@@ -47,7 +47,7 @@ export default function Footer() {
                                 target="_blank">
                                 <FontAwesomeIcon icon={faDiscord} size="1x" />                               
                             </a>
-                            <a className={styles.linha} href="https://t.me/PuppetsArtsCoin" target="_blank">
+                            <a className={styles.linha} href="https://t.me/PuppetsCoin" target="_blank">
                                 <FontAwesomeIcon icon={faTelegram} size="1x" />
                             </a>
                             <a className={styles.linha} href="https://www.facebook.com/PuppetsArtsCoin" target="_blank">
