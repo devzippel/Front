@@ -312,3 +312,8 @@
   text-align: left !important;
 
 }
+
+.disclaimer{
+  padding-top: 5rem;
+  color: hsla(0, 0%, 100%, 0.6);
+}
