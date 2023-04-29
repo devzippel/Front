@@ -70,7 +70,7 @@ const Home: NextPage = () => {
               </Link>
               <Link
                 className={styles.widthButton}
-                href="/"
+                href="https://tokpie.com/view_exchange/puppets-bnb/"
                 target="_blank">
                 <Image
                   src="/tokpie_logo.png"
@@ -220,7 +220,7 @@ const Home: NextPage = () => {
 
 
         <div className={styles.exchange}>
-          <Link href="https://pancakeswap.finance/swap?outputCurrency=0xdA2c0CDf7d764F8C587380CAdF7129E5eCb7Efb7" >
+          <Link href="https://pancakeswap.finance/swap?outputCurrency=0xdA2c0CDf7d764F8C587380CAdF7129E5eCb7Efb7" target="_blank">
             <Image
               src="/PancakeSwap.png"
               width={200}
@@ -232,7 +232,7 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.exchange}>
-          <Link href="https://poocoin.app/tokens/0xda2c0cdf7d764f8c587380cadf7129e5ecb7efb7" >
+          <Link href="https://poocoin.app/tokens/0xda2c0cdf7d764f8c587380cadf7129e5ecb7efb7" target="_blank">
             <Image
               src="/poocoin.png"
               width={200}
@@ -260,7 +260,7 @@ const Home: NextPage = () => {
 
 
         <div className={styles.exchange}>
-          <Link href="https://app.bogged.finance/bsc/swap?tokenIn=BNB&tokenOut&utm_source=telegram&utm_medium=tgbot&utm_campaign=PUPPETS" >
+          <Link href="https://app.bogged.finance/bsc/swap?tokenIn=BNB&tokenOut&utm_source=telegram&utm_medium=tgbot&utm_campaign=PUPPETS" target="_blank">
             <Image
               src="/BoggedFinance.png"
               width={200}
@@ -419,7 +419,7 @@ const Home: NextPage = () => {
 
                 <div className={styles.listInline}>
 
-                  <a className={styles.listInline} href="https://twitter.com/PuppetsArts" target="_blank">
+                  <a className={styles.listInline} href="https://twitter.com/PuppetsCoin" target="_blank">
                     <FontAwesomeIcon icon={faTwitter} size="2x" />
                     &nbsp;&nbsp; &nbsp;&nbsp;
                   </a>
@@ -432,7 +432,7 @@ const Home: NextPage = () => {
                     <FontAwesomeIcon icon={faDiscord} size="2x" />
                     &nbsp;&nbsp; &nbsp;&nbsp;
                   </a>
-                  <a className={styles.listInline} href="https://t.me/PuppetsArtsCoin" target="_blank">
+                  <a className={styles.listInline} href="https://t.me/PuppetsCoin" target="_blank">
                     <FontAwesomeIcon icon={faTelegram} size="2x" />
                     &nbsp;&nbsp; &nbsp;&nbsp;
                   </a>
