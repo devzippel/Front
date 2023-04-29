@@ -262,6 +262,7 @@ export default function Home() {
                       Claim rewards!
                     </Web3Button>
                   </div>
+                  <p className={styles.disclaimer}>DISCLAIMER: Even though this software has been thoroughly tested, this software's content and functionalities are still experimental. By using this software, you agree to hold puppetscoin.com harmless and not liable for any losses of the cryptocurrency assets. Please use this software at your own risk</p>
                 </main>
               </div>
 
