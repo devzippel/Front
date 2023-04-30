@@ -38,7 +38,7 @@ const Home: NextPage = () => {
             <div className={styles.topo1}>
               <h1>Puppets Coin</h1>
               <hr className={`${styles.divider} ${styles.spacerTop}`} />
-              <p className={styles.blueText}>A token invented to bring utility to our NFTs and generate passive income for its holders. This is Puppets Coin.</p>
+              <p className={styles.blueText}>Puppets Coin was created as a utility token to provide value to our NFTs and generate passive income for its holders.</p>
               <p>
                 <Link className={styles.heroCta}
                   href="https://pancakeswap.finance/swap?outputCurrency=0xdA2c0CDf7d764F8C587380CAdF7129E5eCb7Efb7" 
@@ -113,7 +113,7 @@ const Home: NextPage = () => {
               </h1>
 
               <p className={styles.heroSubtitle}>
-                A project that uses tokens and NFTs to generate passive income for its holders. The token has five different ways to burn its supply.
+                Puppets Coin is a project that utilizes tokens and NFTs to generate passive income for its holders, with five different ways to burn token supply.
               </p>
 
             </div>
@@ -301,7 +301,7 @@ const Home: NextPage = () => {
 
             <div className={styles.text} >
               <h1>Long run</h1>
-              <p className={styles.blueText}>PUPPETS, is a long-term project and the price appreciation must happen with the development time. It is a long journey, but it will be able to accomplish great things, bringing much valor for everyone.</p>
+              <p className={styles.blueText}>Puppets Arts é um projeto de longo prazo que visa alcançar realizações significativas ao longo do tempo, levando potencialmente à valorização do preço. Com foco no desenvolvimento, o projeto busca fornecer valor aos seus usuários e partes interessadas.</p>
             </div>
 
 
@@ -318,7 +318,7 @@ const Home: NextPage = () => {
 
             <div className={styles.text}>
               <h1>Reliance</h1>
-              <p className={styles.blueText}>In the cryptocurrency market, trust is everything. This project, was born from the proposal that a token developed by the community, can be traded without fear of blows or rug pulling.</p>
+              <p className={styles.blueText}>Trust is crucial in the cryptocurrency market, and the Puppets Coin project was born from the proposal that a community-developed token can be traded without fear of scams or rug pulls.</p>
             </div>
 
           </div>
