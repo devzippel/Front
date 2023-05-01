@@ -76,7 +76,7 @@ export default function Home() {
   }, [stakeInfo && parseFloat(ethers.utils.formatEther(stakeInfo[0].toString()))]);
 
   const handlePorcentagemRetirar = (porcentagem) => {
-    const novoRetirar = (retirar * porcentagem / 100)-1;
+    const novoRetirar = (retirar * porcentagem / 100)-0.01;
     setNovoRetirar(novoRetirar);
     setAmountToWithdraw(novoRetirar.toFixed(2));
 
@@ -92,7 +92,7 @@ export default function Home() {
 
 
   const handlePorcentagem = (porcentagem) => {
-    const novoValor = (valor * porcentagem / 100)-1;
+    const novoValor = (valor * porcentagem / 100)-0.01;
     setNovoValor(novoValor);
     setAmountToStake(novoValor.toFixed(2));
 
