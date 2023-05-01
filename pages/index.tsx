@@ -34,7 +34,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
        <div>
         <Head>
-           <meta property="og:image" content="/thumbnail.jpg" />
+           <meta property="og:image" content="/thumbnail.png" />
         </Head>
       </div>
       <div className={styles.content}>
