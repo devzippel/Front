@@ -9,7 +9,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCoffee, faFire } from '@fortawesome/free-solid-svg-icons'
 library.add(fab, faCoffee, faFire)
-
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (    
@@ -22,7 +22,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         height={3}
         showOnShallow={true}
   />
-     
+     <Head>
+        <title>Puppets Coin</title>
+        <meta name="description" content="PUPPETS." />
+        <meta property="og:title" content="Puppets Coin" />
+        <meta property="og:description" content="PUPPETS." />
+        <meta property="og:image" content=".public/thumbnail.jpg" />
+      </Head>
       {/* Render the navigation menu above each component */}
       
       
@@ -31,6 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Navbar />
       </ThirdwebProvider>
   );
+
 }
 
 export default MyApp;
