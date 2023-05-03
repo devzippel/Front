@@ -27,10 +27,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="PUPPETS." />
         <meta property="og:title" content="Puppets Coin" />
         <meta property="og:description" content="PUPPETS." />
-        <meta property="og:image" content="/thumbnail.png" />
-        <meta property="og:url" content="https://example.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./public/thumbnail.jpg" />
+        <meta name="description" content="PUPPETS." />
+        <meta property="og:title" content="Puppets Coin" />
+        <meta property="og:description" content="PUPPETS." />
+        <meta property="og:image" content="https://puppetscoin.com/thumbnail.png" />
+        <meta property="og:url" content="https://puppetscoin.com" />
+        <meta property="og:type" content="https://puppetscoin.com" />
       </Head>
       {/* Render the navigation menu above each component */}
       
