@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="PUPPETS." />
         <meta property="og:title" content="Puppets Coin" />
         <meta property="og:description" content="PUPPETS." />
-        <meta property="og:image" content=".public/thumbnail.jpg" />
+        <meta property="og:image" content="https://puppetscoin.com/thumbnail.png" />
       </Head>
       {/* Render the navigation menu above each component */}
       
