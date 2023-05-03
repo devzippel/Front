@@ -429,7 +429,7 @@ const Home: NextPage = () => {
                     <FontAwesomeIcon icon={faTwitter} size="2x" />
                     &nbsp;&nbsp; &nbsp;&nbsp;
                   </a>
-                  <a className={styles.listInline} href="https://www.instagram.com/puppetsarts/" target="_blank">
+                  <a className={styles.listInline} href="https://www.instagram.com/puppetscoin/" target="_blank">
                     <FontAwesomeIcon icon={faInstagram} size="2x" />
                     &nbsp;&nbsp; &nbsp;&nbsp;
                   </a>
