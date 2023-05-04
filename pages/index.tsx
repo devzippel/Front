@@ -460,7 +460,7 @@ const Home: NextPage = () => {
 
                 </ul>
 
-                <div className={styles.listInline}>contato@puppetsarts.com</div>
+                <div className={styles.listInline}>marketing@puppetscoin.com</div>
 
                 <div className={styles.listInline}>2023 Puppets Arts, All Rights Reserved</div>
               </div>
