@@ -67,7 +67,7 @@ export default function Footer() {
                             {isCopied && <div>Copied!</div>}
                         </div>
 
-                        <div className={styles.email}>contato@puppetscoin.com</div>
+                        <div className={styles.email}>marketing@puppetscoin.com</div>
 
                     </div>
 
