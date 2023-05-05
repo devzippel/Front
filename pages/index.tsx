@@ -451,7 +451,7 @@ const Home: NextPage = () => {
                   <li className={styles.listInline}><a href="https://puppetsarts.medium.com/"
                     target="_blank">Medium</a></li>
                   <li className={styles.listInline}><a
-                    href="https://puppets-arts-coin.gitbook.io/puppets-coin/"
+                    href="https://wiki.puppetscoin.com"
                     target="_blank">Whitepaper</a></li>
                   <li className={styles.listInline}><a href="https://opensea.io/collection/puppetsarts"
                     target="_blank">OpenSea</a></li>
