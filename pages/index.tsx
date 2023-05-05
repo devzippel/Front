@@ -64,7 +64,7 @@ const Home: NextPage = () => {
               </p>
               <Link
                 className={styles.widthButton}
-                href="/"
+                href="https://www.finexbox.com/Home/Orders/market/pair/PUPPETS-USDT.html"
                 target="_blank">
                 <Image
                   src="/finexbox.png"
@@ -212,7 +212,7 @@ const Home: NextPage = () => {
       <div className={styles.bloco}>
 
         <div className={styles.exchange}>
-          <Link href="" >
+          <Link href="https://www.finexbox.com/Home/Orders/market/pair/PUPPETS-USDT.html" >
             <Image
               src="/finexbox.png"
               width={200}
@@ -252,7 +252,7 @@ const Home: NextPage = () => {
       <div className={styles.bloco}>
 
         <div className={styles.exchange}>
-          <Link href="" >
+          <Link href="https://tokpie.com/view_exchange/puppets-bnb/" >
             <Image
               src="/tokpie_logo.png"
               width={200}
