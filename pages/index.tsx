@@ -44,7 +44,7 @@ const Home: NextPage = () => {
             <div className={styles.topo1}>
               <h1>Puppets Coin</h1>
               <hr className={`${styles.divider} ${styles.spacerTop}`} />
-              <p className={styles.blueText}>A token invented to bring utility to our NFTs and generate passive income for its holders. This is Puppets Coin.</p>
+              <p className={styles.blueText}>Puppets Coin is a revolutionary token created to add value to our NFTs and provide a source of passive income for its holders.</p>
               <p>
                 <Link className={styles.heroCta}
                   href="https://pancakeswap.finance/swap?outputCurrency=0xdA2c0CDf7d764F8C587380CAdF7129E5eCb7Efb7" 
@@ -307,7 +307,7 @@ const Home: NextPage = () => {
 
             <div className={styles.text} >
               <h1>Long run</h1>
-              <p className={styles.blueText}>PUPPETS, is a long-term project and the price appreciation must happen with the development time. It is a long journey, but it will be able to accomplish great things, bringing much valor for everyone.</p>
+              <p className={styles.blueText}>Puppets is a forward-looking project that is focused on achieving sustainable long-term growth. As we continue to develop and improve our offerings, we anticipate that the value of Puppets will appreciate over time. While this journey may be lengthy, we are confident that our efforts will result in significant benefits for all stakeholders involved.</p>
             </div>
 
 
@@ -324,7 +324,7 @@ const Home: NextPage = () => {
 
             <div className={styles.text}>
               <h1>Reliance</h1>
-              <p className={styles.blueText}>In the cryptocurrency market, trust is everything. This project, was born from the proposal that a token developed by the community, can be traded without fear of blows or rug pulling.</p>
+              <p className={styles.blueText}>In the cryptocurrency market, trust is the foundation upon which all successful projects are built. Puppets was born with the mission of developing a community-driven token that can be traded with confidence, free from the fear of scams or rug pulls. Our commitment to transparency and accountability is at the core of our project, and we believe that it will help us build lasting trust and credibility among our users.</p>
             </div>
 
           </div>
