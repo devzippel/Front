@@ -60,7 +60,7 @@ const Home: NextPage = () => {
                 </Link>
               </p>
               <p className={styles.blueText}>
-                Supported exchanges to buy Puppets Coin
+                Supported exchanges to buy Puppets Coin.
               </p>
               <Link
                 className={styles.widthButton}
