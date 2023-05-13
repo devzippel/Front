@@ -56,9 +56,7 @@ export default function Footer() {
                         </div>
 
                         <ul className={styles.listInline}>
-                            <li className={styles.listInline}><a href="https://puppetsarts.medium.com/"
-                                target="_blank">Medium</a></li>
-                            <li className={styles.listInline}><a href="https://wiki.puppetscoin.com/" target="_blank">Whitepaper</a></li>                            
+                           <li className={styles.listInline}><a href="https://wiki.puppetscoin.com/" target="_blank">Whitepaper</a></li>                            
                         </ul>
                         <div className={styles.quadro}> 0xdA2c0C...9E5eCb7Efb7 
                         <div onClick={handleCopyClick} style={{ cursor: 'pointer', margin: '4px' }}>
