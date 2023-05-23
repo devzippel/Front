@@ -238,9 +238,9 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.exchange}>
-          <Link href="https://poocoin.app/tokens/0xda2c0cdf7d764f8c587380cadf7129e5ecb7efb7" target="_blank">
+          <Link href="https://coinmarketcap.com/currencies/puppets-coin/" target="_blank">
             <Image
-              src="/poocoin.png"
+              src="/CoinMarketCap.png"
               width={200}
               height={40}
               alt="Find"
