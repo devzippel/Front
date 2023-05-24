@@ -278,7 +278,7 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.exchange}>
-          <Link href="" >
+          <Link href="https://www.coingecko.com/en/coins/puppets-coin" >
             <Image
               src="/CoinGecko.png"
               width={200}
