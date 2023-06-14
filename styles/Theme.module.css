@@ -52,9 +52,9 @@
   border-radius: 32px;
 }
 .puppets{
-  width: 400px;
-  height: 300px;
-  border-radius: 20px;
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
   
 }
 
@@ -132,13 +132,13 @@
 }
 
 .mintAreaLeft {
-  margin-left: 5%;
-  opacity: 0.75;
+  margin-left: 10%;
+  opacity: 0.85;
 }
 
 .mintAreaRight {
-  margin-right: 5%;
-  opacity: 0.75;
+  margin-right: 35%;
+  opacity: 0.85;
 }
 
 .spacerTop {
