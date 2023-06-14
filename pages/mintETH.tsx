@@ -243,8 +243,8 @@ const Home: NextPage = () => {
               
               <Image
                 src="/puppets.gif"
-                width={600}
-                height={600}
+                width={500}
+                height={300}
                 alt="Background gradient from red to blue"
                 quality={100}
                 className={styles.puppets}
