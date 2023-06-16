@@ -107,6 +107,14 @@
   overflow: hidden;
   padding-top: 5rem;
 }
+
+@media (max-width: 700px) {
+  .heroAssetFrame1{
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+}
+}
+
 .heroBackgroundD {
   position: absolute;
   z-index: -1;
@@ -337,7 +345,27 @@
   justify-content: center;
   border-radius: 8px;
   transition: all 0.15s ease-in-out;
-  
+  margin-bottom: 15px;
+  background-color: #8fb0da;
+}
+
+.secondaryCta2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  transition: background-color 0.2s;
+  width: 280px;
+  border: 1px solid hsla(0, 0%, 100%, 0.25);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.15s ease-in-out;
+  margin-bottom: 15px;
+  background-color: #efa5c9;
 }
 
 .secondaryCta {
@@ -354,7 +382,7 @@
   justify-content: center;
   border-radius: 8px;
   transition: all 0.15s ease-in-out;
-  background-color: hsla(197, 28%, 59%, 0.432);
+  background-color: hsla(165, 78%, 62%, 0.432);
 
 }
 
@@ -373,6 +401,9 @@
   background-color: hsla(0, 0%, 100%, 0.1);
 }
 .secondaryCta1:hover {
+  background-color: hwb(0 100% 0% / 0.1);
+}
+.secondaryCta2:hover {
   background-color: hsla(0, 0%, 100%, 0.1);
 }
 .tabs {
@@ -776,7 +807,7 @@
 
 .text {
   width: 380px;
-  height: 200px;
+  height: 300px;
   text-align: justify;
   padding: 2rem;
 
@@ -825,6 +856,7 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 5rem;
+    padding-top: 5rem;
   }
 
   .text {
@@ -930,4 +962,24 @@
     font-size: 13px;
      
   }
+}
+
+.blueIcon {
+  color: #1DA1F2;
+}
+
+.instaIcon{
+  color: #833AB4;
+}
+
+.disIcon{
+  color: #7289DA;
+}
+
+.telIcon{
+  color: #0088CC;
+}
+
+.faceIcon{
+  color: #1877F2;
 }
