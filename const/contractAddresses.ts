@@ -8,7 +8,7 @@ export const stakingContractAddress = "0x7Ac5302419Ff544cAd26D24d5a449115ACFe059
 export const NFT_COLLECTION_ADDRESS = "0x25A878bE056f46Ab4af96e05Fe96517eF1A909FA"; //NFT BNB
 
 
-//export const MARKETPLACE_ADDRESS = "";
+export const MARKETPLACE_ADDRESS = "";
 
 // 3. The address of your NFT collection smart contract.
 
