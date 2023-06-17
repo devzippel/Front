@@ -250,8 +250,6 @@ const Home: NextPage = () => {
                 className={styles.puppets}
               />         
               
-
-
               {/* Amount claimed so far */}
               <div className={styles.mintCompletionArea}>
                 <div className={styles.mintAreaLeft}>

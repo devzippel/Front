@@ -18,8 +18,8 @@ import {
   stakingContractAddress,
   tokenContractAddress,
 } from "../const/contractAddresses";
-import styles from "../styles/Home.module.css";
-
+import styles from "../styles/StakeNFT.module.css";
+import axios from "axios";
 
 
 const Stake: NextPage = () => {
@@ -39,13 +39,25 @@ const Stake: NextPage = () => {
   const { data: stakedTokens } = useContractRead(
     contract,
     "getStakeInfo",
-    address
+    [address]
   );
+  const [ethPrice, setEthPrice] = useState(" ");
+  useEffect(() => {
+    const getEthPrice = async () => {
+      const response = await axios.get(`https://app.puppetscoin.com/getethprice`, {});
+      setEthPrice(response.data.usdPriceFormatted);
+    };
+
+    // Executa a função a primeira vez
+    getEthPrice();
+
+
+  }, []);
 
   useEffect(() => {
     if (!contract || !address) return;
     async function loadClaimableRewards() {
-      const stakeInfo = await contract?.call("getStakeInfo", address);
+      const stakeInfo = await contract?.call("getStakeInfo", [address]);
       setClaimableRewards(stakeInfo[1]);
     }
 
@@ -62,15 +74,20 @@ const Stake: NextPage = () => {
     if (!isApproved) {
       await nftDropContract?.setApprovalForAll(stakingContractAddress, true);
     }
-    await contract?.call("stake", [id]);
+    await contract?.call("stake", [[id]]);
   }
 
   if (isLoading) {
     return <div>Loading</div>;
   }
+  const claimableRewardsFormatted = !claimableRewards
+    ? "Loading..."
+    : ethers.utils.formatUnits(claimableRewards, 2);
+
+
+
 
   return (
-    
     <div className={styles.container}>
       <div className={styles.hero}>
         <div className={styles.heroBackground}>
@@ -86,24 +103,23 @@ const Stake: NextPage = () => {
           </div>
         </div>
         <div className={styles.containerStake}>
-          <hr className={`${styles.divider} ${styles.spacerTop}`} />            
-              <h2>Your Staked NFTs</h2>
-              <div className={styles.nftBoxGrid}>
-                {stakedTokens &&
-                  stakedTokens[0]?.map((stakedToken: BigNumber) => (
-                    <NFTCard
-                      tokenId={stakedToken.toNumber()}
-                      key={stakedToken.toString()}
-                    />
-                  ))}
-              </div>
-              <hr className={`${styles.divider} ${styles.spacerTop}`} />
-            {!address ? (
+          <hr className={`${styles.divider} ${styles.spacerTop}`} />
+          <h2>Your Staked NFTs</h2>
+          <div className={styles.nftBoxGrid}>
+            {stakedTokens &&
+              stakedTokens[0]?.map((stakedToken: BigNumber) => (
+                <NFTCard
+                  tokenId={stakedToken.toNumber()}
+                  key={stakedToken.toString()}
+                />
+              ))}
+          </div>
+          <hr className={`${styles.divider} ${styles.spacerTop}`} />
+          {!address ? (
             <ConnectWallet />
-            
           ) : (
-            <>             
-              <h2>Your Tokens</h2>              
+            <>
+              <h2>Your Tokens</h2>
               <div className={styles.tokenGrid}>
                 <div className={styles.tokenItem}>
                   <h3 className={styles.tokenLabel}>Claimable Rewards</h3>
@@ -114,22 +130,21 @@ const Stake: NextPage = () => {
                         : ethers.utils.formatUnits(claimableRewards, 2)}
                     </b>{" "}
                     {tokenBalance?.symbol}
+                    < br />
+                    <span>
+                      ~${(parseFloat(Number(ethPrice).toFixed(7).toLocaleString()) * parseFloat(claimableRewardsFormatted)).toFixed(4)}
+                    </span>
                   </p>
-                
-                  </div>
-                  </div>         
-              
-                  {console.log((Number(tokenBalance?.displayValue)))}
-                  <Web3Button
-                    action={(contract) => contract.call("claimRewards")}
-                    contractAddress={stakingContractAddress}
-                  >
-                    
-                    Claim Rewards
-                  </Web3Button>
-                                  
+                </div>
+              </div>
+              {console.log(Number(tokenBalance?.displayValue))}
+              <Web3Button
+                action={(contract) => contract.call("claimRewards")}
+                contractAddress={stakingContractAddress}
+              >
+                Claim Rewards
+              </Web3Button>
               <hr className={`${styles.divider} ${styles.spacerTop}`} />
-              
               <h2>Your Unstaked NFTs</h2>
               <div className={styles.nftBoxGrid}>
                 {ownedNfts?.map((nft) => (
@@ -150,10 +165,13 @@ const Stake: NextPage = () => {
               </div>
             </>
           )}
+
+          <h3 className={styles.date}>This staking will be active until 24/6/2024 or as long as the staking pool still has staking tokens</h3>
+          <p className={styles.disclaimer}>DISCLAIMER: Even though this software has been thoroughly tested, this software's content and functionalities are still experimental. By using this software, you agree to hold puppetscoin.com harmless and not liable for any losses of the cryptocurrency assets. Please use this software at your own risk</p>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Stake;

@@ -53,10 +53,17 @@ const Home: NextPage = () => {
                 </Link>
                 <Link
                   className={styles.secondaryCta1}
-                  href="https://tofunft.com/collection/puppets-arts/items"
+                  href="https://puppetscoin.com/mintBNB"
                   target="_blank"
                 >
-                  Buy NFTs
+                  Buy NFTs BNB
+                </Link>
+                <Link
+                  className={styles.secondaryCta2}
+                  href="https://puppetscoin.com/mintETH"
+                  target="_blank"
+                >
+                  Buy NFTs ETH
                 </Link>
               </p>
               <p className={styles.blueText}>
@@ -121,7 +128,6 @@ const Home: NextPage = () => {
               <p className={styles.heroSubtitle}>
                 A project that uses tokens and NFTs to generate passive income for its holders. The token has five different ways to burn its supply.
               </p>
-
             </div>
           </div>
         </div>
@@ -278,7 +284,7 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.exchange}>
-          <Link href="https://www.coingecko.com/en/coins/puppets-coin" >
+          <Link href="" >
             <Image
               src="/CoinGecko.png"
               width={200}
@@ -418,32 +424,32 @@ const Home: NextPage = () => {
 
                 <Link className="" href="/">
                   <Image src="/logo.png"
-                    width={200}
-                    height={200}
+                    width={250}
+                    height={50}
                     alt="Logo" />
                 </Link>
 
                 <div className={styles.listInline}>
 
-                  <a className={styles.listInline} href="https://twitter.com/PuppetsCoin" target="_blank">
-                    <FontAwesomeIcon icon={faTwitter} size="2x" />
-                    &nbsp;&nbsp; &nbsp;&nbsp;
-                  </a>
+                <a className={styles.listInline} href="https://twitter.com/PuppetsCoin" target="_blank">
+                <FontAwesomeIcon icon={faTwitter} size="2x" className={styles.blueIcon} />
+                  &nbsp;&nbsp; &nbsp;&nbsp;
+                </a>
                   <a className={styles.listInline} href="https://www.instagram.com/puppetscoin/" target="_blank">
-                    <FontAwesomeIcon icon={faInstagram} size="2x" />
+                    <FontAwesomeIcon icon={faInstagram} size="2x" className={styles.instaIcon} />
+                    &nbsp;&nbsp; &nbsp;&nbsp;
+                  </a>                  
+                  <a className={styles.listInline} href="https://t.me/PuppetsCoin" target="_blank">
+                    <FontAwesomeIcon icon={faTelegram} size="2x" className={styles.telIcon} />
                     &nbsp;&nbsp; &nbsp;&nbsp;
                   </a>
                   <a className={styles.listInline} href="https://discord.gg/vr2q4DUcZN" 
                   target="_blank">
-                    <FontAwesomeIcon icon={faDiscord} size="2x" />
-                    &nbsp;&nbsp; &nbsp;&nbsp;
-                  </a>
-                  <a className={styles.listInline} href="https://t.me/PuppetsCoin" target="_blank">
-                    <FontAwesomeIcon icon={faTelegram} size="2x" />
+                    <FontAwesomeIcon icon={faDiscord} size="2x" className={styles.disIcon} />
                     &nbsp;&nbsp; &nbsp;&nbsp;
                   </a>
                   <a className={styles.listInline} href="https://www.facebook.com/PuppetsArtsCoin" target="_blank">
-                    <FontAwesomeIcon icon={faFacebook} size="2x" />
+                    <FontAwesomeIcon icon={faFacebook} size="2x"  className={styles.faceIcon} />
                   </a>
 
                 </div>
