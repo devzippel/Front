@@ -52,10 +52,10 @@ export default function Header() {
     return (
         <div className={styles.navLeft}>
             <section className={styles.navMiddle}>
-                <Image src="/logo.png"
+                <Image src="/logopreto.png"
                     alt="Puppets Logo"
-                    width={25}
-                    height={25} />
+                    width={27}
+                    height={27} />
 
                 <div
                     className={styles.objeto}
