@@ -80,20 +80,28 @@ export function Navbar() {
                 <Link href="/stakeToken" className={styles.sider} onClick={handleSidebar}>
                 🪙  Stake Token
                 </Link>
-                <Link href="" className={styles.sider} onClick={handleSidebar}>
-                🖼  Stake NFT <span className={styles.soon}>Soon</span>
+                <Link href="/stakeNFT" className={styles.sider} onClick={handleSidebar}>
+                🖼  Stake NFT 
                 </Link>
                 
                 <Link href="" className={styles.sider} onClick={handleSidebar}>
-                🖼 Mint NFT <span className={styles.soon}>Soon</span>
+                🎁  Mint NFT 
                 </Link>
 
-                <Link href="" className={styles.sider} onClick={handleSidebar}>
-                🛒 BUY <span className={styles.soon}>Soon</span>
+                <Link href="/nftbnb" className={styles.sider} onClick={handleSidebar}>
+                <Image src="/binance.png"
+                    alt="Puppets Logo"
+                    width={20}
+                    height={20} />   
+                    &nbsp;MyNFTBNB 
                 </Link>    
 
-                 <Link href="" className={styles.sider} onClick={handleSidebar}>
-                🛒 SELL <span className={styles.soon}>Soon</span>
+                 <Link href="/nfteth" className={styles.sider} onClick={handleSidebar}>
+                 <Image src="/ETH.png"
+                    alt="Puppets Logo"
+                    width={13}
+                    height={21} /> 
+                    &nbsp; MyNFTETH 
                  </Link>               
             </ul>
             <div>
@@ -105,9 +113,17 @@ export function Navbar() {
           <Link href="/" className={`${styles.homeLink} ${styles.navLeft}`}>
             <Image
               src="/logo.png"
-              width={68}
-              height={68}
+              width={250}
+              height={50}
               alt="Puppets Coin logo"
+              className={styles.logonavgrande}
+            />
+            <Image
+              src="/logocel.png"
+              width={50}
+              height={50}
+              alt="Puppets Coin logo"
+              className={styles.logonav}
             />
           </Link>
         </div>
@@ -123,30 +139,38 @@ export function Navbar() {
             > 🪙 Stake
               {showStakeSubMenu && (
                 <div className={styles.submenu}>
-                  <Link href="" className={styles.link}>
-                    🖼 &nbsp;NFT <span className={styles.soon}>Soon</span>
-                  </Link>
                   <Link href="/stakeToken" className={styles.link}>
-                    🪙 &nbsp;Stake Token &nbsp;&nbsp;
+                  &nbsp;🪙&nbsp;Stake Token 
+                  </Link>
+                  <Link href="/stakeNFT" className={styles.link}>
+                 🖼 &nbsp;Stake NFT 
                   </Link>
                 </div>
               )}
             </div>
-            {/**<Link href="" className={styles.link}>
-              🖼 Mint 
-              </Link>*/}
+           <Link href="/nft" className={styles.link}>
+            🎁 Mint 
+              </Link>
             <div
               className={styles.link}
               onMouseEnter={handleMarketMouseEnter}
               onMouseLeave={handleMarketMouseLeave}
-            >🛒 Market
+            > 🖼 MyNFT
               {showMarketSubMenu && (
                 <div className={styles.submenu}>
-                  <Link href="" className={styles.link}>
-                    🖼 &nbsp;Buy <span className={styles.soon}>Soon</span>
+                  <Link href="/nftbnb" className={styles.link}>
+                  <Image src="/binance.png"
+                    alt="Puppets Logo"
+                    width={16}
+                    height={16} />
+                    &nbsp; MyNFT BNB
                   </Link>
-                  <Link href="" className={styles.link}>
-                    🪙 &nbsp;Sell <span className={styles.soon}>Soon</span>
+                  <Link href="/nfteth" className={styles.link}>
+                  <Image src="/ETH.png"
+                    alt="Puppets Logo"
+                    width={11}
+                    height={18} /> 
+                    &nbsp; MyNFT ETH 
                   </Link>
                 </div>
               )}
