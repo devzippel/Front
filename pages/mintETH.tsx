@@ -216,8 +216,8 @@ const Home: NextPage = () => {
           <div className={styles.heroBackgroundInner}>
             <Image
               src="/hero-gradient.png"
-              width={1390}
-              height={1390}
+              width={1272}
+              height={1075}
               alt="Background gradient from red to blue"
               quality={100}
               className={styles.gradient}
@@ -226,7 +226,7 @@ const Home: NextPage = () => {
         </div>
       <div className={styles.mintInfoContainer}>
         {isLoading ? (
-          <PropagateLoader color="#3cefff" size={25} />
+          <PropagateLoader color="#306283" size={25} />
         ) : (
           <>
             <div className={styles.infoSide}>

@@ -80,7 +80,7 @@ const Stake: NextPage = () => {
   if (isLoading) {
     return (
       <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
-        <PropagateLoader color="#3cefff" size={25} />
+        <PropagateLoader color="#306283" size={25} />
       </div>
     );
     

@@ -230,7 +230,7 @@ const Home: NextPage = () => {
       <div className={styles.mintInfoContainer}>
         {isLoading ? (
 
-      <PropagateLoader color="#3cefff" size={25} />         
+      <PropagateLoader color="#306283" size={25} />         
         
         ) : (
           <>
