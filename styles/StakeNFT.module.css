@@ -988,12 +988,12 @@
   color: hsla(0, 0%, 100%, 0.6);
   padding-left: 50px;
   padding-right: 50px;
-  width: 1000px;
+  width: 900px;
   text-align: justify;
 }
 @media (max-width: 768px){
   .disclaimer{
-    width: 600px;
+    width: 550px;
     text-align: justify;
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1001,11 +1001,18 @@
 }
 .date{
   color:#6da4c4;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20rem;
+  width: 900px;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 @media (max-width: 768px){
   .date{
-    width: 600px;
+    width: 550px;
     text-align: justify;
     padding: 5rem;
   }
