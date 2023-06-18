@@ -18,6 +18,9 @@ import { useMemo, useState } from "react";
 import Timer from "../components/Timer";
 import styles from "../styles/Theme.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
+import { PropagateLoader } from "react-spinners";
+
+
 
 // Put Your NFT Drop Contract address from the dashboard here
 const NftDropContractAddress = "0x25A878bE056f46Ab4af96e05Fe96517eF1A909FA";
@@ -226,7 +229,9 @@ const Home: NextPage = () => {
         </div>
       <div className={styles.mintInfoContainer}>
         {isLoading ? (
-          <p>Loading...</p>
+
+      <PropagateLoader color="#3cefff" size={25} />         
+        
         ) : (
           <>
             <div className={styles.infoSide}>
@@ -265,6 +270,7 @@ const Home: NextPage = () => {
                     </p>
                   ) : (
                     <p>Loading...</p>
+                                        
                   )}
                 </div>
               </div>
@@ -340,7 +346,7 @@ const Home: NextPage = () => {
       <Image
         src="/logo.png"
         alt="thirdweb Logo"
-        width={100}
+        width={250}
         height={100}
         className={styles.buttonGapTop}
         style={{

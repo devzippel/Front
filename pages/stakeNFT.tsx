@@ -20,7 +20,7 @@ import {
 } from "../const/contractAddresses";
 import styles from "../styles/StakeNFT.module.css";
 import axios from "axios";
-
+import { PropagateLoader } from "react-spinners";
 
 const Stake: NextPage = () => {
   const address = useAddress();
@@ -78,7 +78,12 @@ const Stake: NextPage = () => {
   }
 
   if (isLoading) {
-    return <div>Loading</div>;
+    return (
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+        <PropagateLoader color="#3cefff" size={25} />
+      </div>
+    );
+    
   }
   const claimableRewardsFormatted = !claimableRewards
     ? "Loading..."
@@ -166,7 +171,7 @@ const Stake: NextPage = () => {
             </>
           )}
 
-          <h3 className={styles.date}>This staking will be active until 24/6/2024 or as long as the staking pool still has staking tokens</h3>
+          <p className={styles.date}>This staking will be active until 24/6/2024 or as long as the staking pool still has staking tokens</p>
           <p className={styles.disclaimer}>DISCLAIMER: Even though this software has been thoroughly tested, this software's content and functionalities are still experimental. By using this software, you agree to hold puppetscoin.com harmless and not liable for any losses of the cryptocurrency assets. Please use this software at your own risk</p>
         </div>
       </div>
