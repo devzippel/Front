@@ -9,7 +9,7 @@ import Container from "../components/Container/Container";
 import NFTGrid from "../components/NFT/NFTGrid";
 import tokenPageStyles from "../styles/Token.module.css";
 import { NFT as NFTType } from "@thirdweb-dev/sdk";
-import SaleInfo from "../components/SaleInfo/SaleInfo";
+//import SaleInfo from "../components/SaleInfo/SaleInfo";
 
 const NFT_COLLECTION_ADDRESS = "0x25A878bE056f46Ab4af96e05Fe96517eF1A909FA";
 
