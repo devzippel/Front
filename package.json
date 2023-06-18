@@ -28,6 +28,7 @@
     "react-dom": "^18.2",
     "react-hook-form": "^7.43.9",
     "react-hot-toast": "^2.4.0",
+    "react-spinners": "^0.13.8",
     "sass": "^1.60.0",
     "use-clipboard-api": "^0.3.4"
   },
