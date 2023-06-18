@@ -84,8 +84,20 @@ export function Navbar() {
                 🖼  Stake NFT 
                 </Link>
                 
-                <Link href="" className={styles.sider} onClick={handleSidebar}>
-                🎁  Mint NFT 
+                <Link href="/mintBNB" className={styles.sider} onClick={handleSidebar}>
+                <Image src="/binance.png"
+                    alt="Puppets Logo"
+                    width={20}
+                    height={20} />   
+                    &nbsp;Mint NFT BNB
+                </Link>
+
+                <Link href="mintETH" className={styles.sider} onClick={handleSidebar}>
+                <Image src="/ETH.png"
+                    alt="Puppets Logo"
+                    width={13}
+                    height={21} /> 
+                    &nbsp;Mint NFT ETH
                 </Link>
 
                 <Link href="/nftbnb" className={styles.sider} onClick={handleSidebar}>
