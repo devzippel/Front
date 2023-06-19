@@ -142,7 +142,7 @@ const Stake: NextPage = () => {
                   </p>
                 </div>
               </div>
-              {console.log(Number(tokenBalance?.displayValue))}
+              
               <Web3Button
                 action={(contract) => contract.call("claimRewards")}
                 contractAddress={stakingContractAddress}
