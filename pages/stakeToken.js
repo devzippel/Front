@@ -52,7 +52,7 @@ export default function Home() {
     data: stakeInfo,
     refetch: refetchStakingInfo,
     isLoading: isStakeInfoLoading,
-  } = useContractRead(staking, "getStakeInfo", address || "0");
+  } = useContractRead(staking, "getStakeInfo", [address || "0"]);
 
   useEffect(() => {
     setInterval(() => {
