@@ -120,7 +120,7 @@ const Home: NextPage = () => {
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  Token, NFT, Stake and Market
+                  Token, NFT and Stake
                 </span>
                 <hr className={`${styles.divider} ${styles.spacerTop}`} />
               </h1>
