@@ -11,7 +11,7 @@ import tokenPageStyles from "../styles/Token.module.css";
 import { NFT as NFTType } from "@thirdweb-dev/sdk";
 //import SaleInfo from "../components/SaleInfo/SaleInfo";
 
-const NFT_COLLECTION_ADDRESS = "0x25A878bE056f46Ab4af96e05Fe96517eF1A909FA";
+const NFT_COLLECTION_ADDRESS = "0xBc57Aa72b0e3fa48D6cccE59E38E0F6EC156A5E1";
 
 export default function Sell() {
   // Load all of the NFTs from the NFT Collection
