@@ -198,7 +198,7 @@ export default function Home() {
                           );
                           await contract.call(
                             "stake",
-                            ethers.utils.parseEther(amountToStake)
+                            [ethers.utils.parseEther(amountToStake)]
                           );
                           alert("Tokens staked successfully!");
                         }}
@@ -233,7 +233,7 @@ export default function Home() {
                         contractAddress={stakingContractAddress}
                         action={async (contract) => {
                           await contract.call("withdraw",
-                            ethers.utils.parseEther(amountToWithdraw)
+                            [ethers.utils.parseEther(amountToWithdraw)]
                           );
                           alert("Tokens unstaked successfully!");
                         }}
@@ -273,4 +273,6 @@ export default function Home() {
     </div>
   );
 }
+
+
 
