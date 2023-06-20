@@ -17,9 +17,6 @@ export default function NFTComponent({ nft }: Props) {
       <p className={styles.nftTokenId}>Token ID #{nft.metadata.id}</p>
       <p className={styles.nftName}>{nft.metadata.name}</p>
 
-      <div className={styles.priceContainer}>
-        <Skeleton width="100%" height="100%" />
-      </div>
     </>
   );
 }
