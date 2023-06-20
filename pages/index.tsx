@@ -97,8 +97,8 @@ const Home: NextPage = () => {
             <div className={styles.heroBackground}>
               <Image
                 src="/hero-gradient.png"
-                width={1390}
-                height={1390}
+                width={1272}
+                height={1075}
                 alt="Background gradient from red to blue"
                 quality={100}
                 className={styles.gradient}
@@ -136,9 +136,9 @@ const Home: NextPage = () => {
       <div className={styles.heroCtaContainer}>
         <div>
           <Image
-            src="/purple.png"
-            width={1200}
-            height={360}
+            src="/escura.png"
+            width={1440}
+            height={260}
             alt="Hero asset, NFT marketplace"
             quality={100}
             className={styles.purple}
@@ -149,7 +149,7 @@ const Home: NextPage = () => {
         <div className={styles.heroBody}>
           <h1 className={styles.heroTitle}>
             <span className={styles.heroTitleGradient}>
-              NFTs Puppets Arts
+              NFTs Puppets Funny
             </span>
           </h1>
         </div>
@@ -347,7 +347,7 @@ const Home: NextPage = () => {
               <h3 className={styles.h3}>3% Stake Pool</h3>
               <p className={styles.blueText}>3% of our fees are added to our Stacke pool.
                 1% for Puppets Coin Token pool.
-                1% for NFT one Puppets Arts pool.
+                1% for NFT one Puppets Coin pool.
                 1% this tax is used for project buy back or burn.</p>
             </div>
 
@@ -394,7 +394,7 @@ const Home: NextPage = () => {
 
             <div className={styles.text} >
               <h1>Stake NFT</h1>
-              <p className={styles.blueText}>You can buy Puppets Arts NFTs and bet on our Stake platform. Where you can earn passive income every day, while the staking period of your NFTs lasts, you can continue staking.</p>
+              <p className={styles.blueText}>You can buy Puppets NFTs and bet on our Stake platform. Where you can earn passive income every day, while the staking period of your NFTs lasts, you can continue staking.</p>
             </div>
 
 
@@ -467,7 +467,7 @@ const Home: NextPage = () => {
 
                 <div className={styles.listInline}>marketing@puppetscoin.com</div>
 
-                <div className={styles.listInline}>2023 Puppets Arts, All Rights Reserved</div>
+                <div className={styles.listInline}>2023 Puppets, All Rights Reserved</div>
               </div>
 
 
