@@ -1003,7 +1003,7 @@
   color:#6da4c4;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 20rem;
+  padding-top: 10rem;
   width: 900px;
   text-align: justify;
   font-size: 20px;
@@ -1362,3 +1362,9 @@
   padding-top: 5rem;
   color: hsla(0, 0%, 100%, 0.6);
 }
+
+.nfttopo{
+  width: 100%;
+  height: auto;
+}
+
