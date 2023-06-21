@@ -83,14 +83,11 @@ const Stake: NextPage = () => {
         <PropagateLoader color="#306283" size={25} />
       </div>
     );
-    
+
   }
   const claimableRewardsFormatted = !claimableRewards
     ? "Loading..."
     : ethers.utils.formatUnits(claimableRewards, 2);
-
-
-
 
   return (
     <div className={styles.container}>
@@ -99,8 +96,8 @@ const Stake: NextPage = () => {
           <div className={styles.heroBackgroundInner}>
             <Image
               src="/hero-gradient.png"
-              width={1390}
-              height={1390}
+              width={1275}
+              height={1075}
               alt="Background gradient from red to blue"
               quality={100}
               className={styles.gradient}
@@ -108,6 +105,14 @@ const Stake: NextPage = () => {
           </div>
         </div>
         <div className={styles.containerStake}>
+        <Image
+          src="/topo.png"
+          width={1440}
+          height={88}
+          alt="NFT TOPO"
+          quality={100}
+          className={styles.nfttopo}
+        />
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
           <h2>Your Staked NFTs</h2>
           <div className={styles.nftBoxGrid}>
@@ -142,7 +147,6 @@ const Stake: NextPage = () => {
                   </p>
                 </div>
               </div>
-              
               <Web3Button
                 action={(contract) => contract.call("claimRewards")}
                 contractAddress={stakingContractAddress}
@@ -170,7 +174,7 @@ const Stake: NextPage = () => {
               </div>
             </>
           )}
-
+        
           <p className={styles.date}>This staking will be active until 24/6/2024 or as long as the staking pool still has staking tokens</p>
           <p className={styles.disclaimer}>DISCLAIMER: Even though this software has been thoroughly tested, this software's content and functionalities are still experimental. By using this software, you agree to hold puppetscoin.com harmless and not liable for any losses of the cryptocurrency assets. Please use this software at your own risk</p>
         </div>
