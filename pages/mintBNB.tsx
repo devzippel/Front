@@ -23,7 +23,7 @@ import { PropagateLoader } from "react-spinners";
 
 
 // Put Your NFT Drop Contract address from the dashboard here
-const NftDropContractAddress = "0xBc57Aa72b0e3fa48D6cccE59E38E0F6EC156A5E1";
+const NftDropContractAddress = "0xE2B12125dCa462E8A28b61Cd2dA0D556a2B755a6";
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(NftDropContractAddress);
