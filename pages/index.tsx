@@ -345,10 +345,10 @@ const Home: NextPage = () => {
             </div>
             <div className={styles.textdois}>
               <h3 className={styles.h3}>3% Stake Pool</h3>
-              <p className={styles.blueText}>3% of our fees are added to our Stacke pool.
+              <p className={styles.blueText}>2% of our fees are added to our Stacke pool.
                 1% for Puppets Coin Token pool.
                 1% for NFT one Puppets Coin pool.
-                1% this tax is used for project buy back or burn.</p>
+                </p>
             </div>
 
             <div className={styles.textdois}>
