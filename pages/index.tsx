@@ -344,7 +344,7 @@ const Home: NextPage = () => {
                 {`A percentage of fees are added on liquidity. Our token has a buyback function. Every time it is traded, this repurchase occurs and a percentage is burned by decreasing the token's circulating supply. This function makes the Puppets Coin Token extremely Hyperdeflationary.`}</p>
             </div>
             <div className={styles.textdois}>
-              <h3 className={styles.h3}>3% Stake Pool</h3>
+              <h3 className={styles.h3}>2% Stake Pool</h3>
               <p className={styles.blueText}>2% of our fees are added to our Stacke pool.
                 1% for Puppets Coin Token pool.
                 1% for NFT one Puppets Coin pool.
