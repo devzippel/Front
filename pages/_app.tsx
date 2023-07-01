@@ -31,10 +31,18 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <ThirdwebProvider activeChain = {activeChain}>
+      <ThirdwebProvider activeChain = {activeChain}
+       dAppMeta={{
+        name: "Puppets Coin",
+        description: "Token, Stake, NFT",
+        logoUrl: "https://puppetscoin.com/logow.png",
+        url: "https://puppetscoin.com/",
+        isDarkMode: true,
+      }}>
         <Navbar />
         <Component {...pageProps} />
       </ThirdwebProvider>
+     
 
       <NextNProgress
         color="var(--color-tertiary)"
