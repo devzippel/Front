@@ -460,7 +460,7 @@ const Home: NextPage = () => {
                   <li className={styles.listInline}><a 
                     href="https://opensea.io/collection/puppets-funny"
                     target="_blank">OpenSea</a></li>
-                  <li className={styles.listInline}><a href="https://tofunft.com/collection/puppets-arts/items"
+                  <li className={styles.listInline}><a href="https://tofunft.com/collection/puppets-funny-bnb/items"
                     target="_blank">TofuNFT</a></li>
 
                 </ul>
