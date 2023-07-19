@@ -87,7 +87,7 @@ const Stake: NextPage = () => {
   }
   const claimableRewardsFormatted = !claimableRewards
     ? "Loading..."
-    : ethers.utils.formatUnits(claimableRewards, 2);
+    : ethers.utils.formatUnits(claimableRewards, 18);
 
   return (
     <div className={styles.container}>
@@ -137,7 +137,7 @@ const Stake: NextPage = () => {
                     <b>
                       {!claimableRewards
                         ? "Loading..."
-                        : ethers.utils.formatUnits(claimableRewards, 2)}
+                        : ethers.utils.formatUnits(claimableRewards, 18)}
                     </b>{" "}
                     {tokenBalance?.symbol}
                     < br />
