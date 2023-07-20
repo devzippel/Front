@@ -80,8 +80,8 @@ export function Navbar() {
                 <Link href="/stakeToken" className={styles.sider} onClick={handleSidebar}>
                 🪙  Stake Token
                 </Link>
-                <Link href="" className={styles.sider} onClick={handleSidebar}>
-                🖼  Stake NFT &nbsp;<span className={styles.soon}>Soon</span>
+                <Link href="/stakeNFT" className={styles.sider} onClick={handleSidebar}>
+                🖼  Stake NFT &nbsp;
                 </Link>
                 
                 <Link href="/mintBNB" className={styles.sider} onClick={handleSidebar}>
@@ -154,8 +154,8 @@ export function Navbar() {
                   <Link href="/stakeToken" className={styles.link}>
                   &nbsp;🪙&nbsp;Stake Token 
                   </Link>
-                  <Link href="" className={styles.link}>
-                 🖼 &nbsp;Stake NFT &nbsp;<span className={styles.soon}>Soon</span>
+                  <Link href="/stakeNFT" className={styles.link}>
+                 🖼 &nbsp;Stake NFT &nbsp;
                   </Link>
                 </div>
               )}
