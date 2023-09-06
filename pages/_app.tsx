@@ -17,6 +17,9 @@ type ValidChain = "binance" | "ethereum";
 
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const readOnlySdk = new ThirdwebSDK("binance", {
+  secretKey: "YOUR_SECRET_KEY", // Use secret key if using on the server, get it from dashboard settings
+ });
   const router = useRouter();
   const { pathname } = router;
 
