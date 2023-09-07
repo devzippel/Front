@@ -10,6 +10,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faCoffee, faFire } from "@fortawesome/free-solid-svg-icons";
 import Head from "next/head";
 import { useRouter } from 'next/router';
+import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 library.add(fab, faCoffee, faFire);
 
 // Definir um tipo personalizado para os valores válidos de activeChain
