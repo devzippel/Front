@@ -35,14 +35,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThirdwebProvider 
       activeChain = {activeChain}      
       clientId = {process.env.YOUR_CLIENT_ID}
-      secretKey = {process.env.YOUR_SECRET_KEY}
-       dAppMeta={{
+        dAppMeta={{
         name: "Puppets Coin",
         description: "Token, Stake, NFT",
         logoUrl: "https://puppetscoin.com/logow.png",
         url: "https://puppetscoin.com/",
-        isDarkMode: true
-        
+        isDarkMode: true        
       }}>
         <Navbar />
         <Component {...pageProps} />
