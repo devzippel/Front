@@ -7,6 +7,7 @@ import {
   useOwnedNFTs,
   useTokenBalance,
   Web3Button,
+  ThirdwebSDK,
 } from "@thirdweb-dev/react";
 import { BigNumber, ethers } from "ethers";
 import Image from "next/image";
@@ -21,12 +22,16 @@ import {
 import styles from "../styles/StakeNFT.module.css";
 import axios from "axios";
 import { PropagateLoader } from "react-spinners";
+import dotenv from 'dotenv';
+dotenv.config();
+const secretKey = process.env.SECRET_KEY;
+
 
 const Stake: NextPage = () => {
-  // Read-only mode
-const readOnlySdk = new ThirdwebSDK("binance", {
-  secretKey: "YOUR_SECRET_KEY", // Use secret key if using on the server, get it from dashboard settings
-});
+  const sdk = new ThirdwebSDK("binance", {
+    clientId: process.env.YOUR_CLIENT_ID,
+  });
+
   const address = useAddress();
   const { contract: nftDropContract } = useContract(
     nftDropContractAddress,
