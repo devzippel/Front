@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { ThirdwebProvider, Chain } from "@thirdweb-dev/react";
+import { ThirdwebProvider, Chain,  ThirdwebSDK } from "@thirdweb-dev/react";
 import { Navbar } from "../components/Navbar/Navbar";
 import NextNProgress from "nextjs-progressbar";
 import "../const/contractAddresses";
@@ -10,17 +10,14 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faCoffee, faFire } from "@fortawesome/free-solid-svg-icons";
 import Head from "next/head";
 import { useRouter } from 'next/router';
-import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 library.add(fab, faCoffee, faFire);
+
 
 // Definir um tipo personalizado para os valores válidos de activeChain
 type ValidChain = "binance" | "ethereum";
 
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const readOnlySdk = new ThirdwebSDK("binance", {
-  secretKey: "YOUR_SECRET_KEY", // Use secret key if using on the server, get it from dashboard settings
- });
   const router = useRouter();
   const { pathname } = router;
 
@@ -35,13 +32,17 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <ThirdwebProvider activeChain = {activeChain}
+      <ThirdwebProvider 
+      activeChain = {activeChain}      
+      clientId = {process.env.YOUR_CLIENT_ID}
+      secretKey = {process.env.YOUR_SECRET_KEY}
        dAppMeta={{
         name: "Puppets Coin",
         description: "Token, Stake, NFT",
         logoUrl: "https://puppetscoin.com/logow.png",
         url: "https://puppetscoin.com/",
-        isDarkMode: true,
+        isDarkMode: true
+        
       }}>
         <Navbar />
         <Component {...pageProps} />
