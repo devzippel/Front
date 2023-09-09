@@ -35,6 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThirdwebProvider 
       activeChain = {activeChain}      
       clientId = {process.env.YOUR_CLIENT_ID}
+      secretKey = {process.env.YOUR_SECRET_KEY}
         dAppMeta={{
         name: "Puppets Coin",
         description: "Token, Stake, NFT",
