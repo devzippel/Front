@@ -2,12 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   assetPrefix: "./",
-};
-
-module.exports = nextConfig;
-
-module.exports = {
-  
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     remotePatterns: [
       {
@@ -15,5 +12,7 @@ module.exports = {
         hostname: 'puppetscoin.com',
       },
     ],
-  }
-}
+  },
+};
+
+module.exports = nextConfig;
