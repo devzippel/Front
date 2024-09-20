@@ -2,9 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   assetPrefix: "./",
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   images: {
     remotePatterns: [
       {
@@ -16,3 +13,4 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
