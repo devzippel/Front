@@ -13,6 +13,7 @@ import { useRouter } from 'next/router';
 library.add(fab, faCoffee, faFire);
 
 
+
 // Definir um tipo personalizado para os valores válidos de activeChain
 type ValidChain = "binance" | "ethereum";
 
@@ -33,10 +34,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <ThirdwebProvider 
-      clientId={process.env.NEXT_PUBLIC_CLIENT_ID}
-      activeChain = {activeChain}      
-      //clientId = {process.env.YOUR_CLIENT_ID}
-      //secretKey = {process.env.YOUR_SECRET_KEY}
+      clientId={process.env.NEXT_PUBLIC_CLIENT_ID} 
+      activeChain = {activeChain} 
         dAppMeta={{
         name: "Puppets Coin",
         description: "Token, Stake, NFT",
