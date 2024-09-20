@@ -16,27 +16,28 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@moralisweb3/common-evm-utils": "^2.18.4",
-    "@thirdweb-dev/react": "^3.14.40",
-    "@thirdweb-dev/sdk": "^3.10.59",
+    "@thirdweb-dev/react": "^4.9.4",
+    "@thirdweb-dev/sdk": "^4.0.99",
+    "thirdweb": "^5.42.0",
     "@types/express": "^4.17.17",
     "dotenv": "^16.3.1",
     "ethers": "^5.7.2",
     "moralis": "^2.18.4",
-    "next": "^13",
+    "next": "^14.2.12",
     "nextjs-progressbar": "^0.0.16",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2",
     "react-hook-form": "^7.43.9",
     "react-hot-toast": "^2.4.0",
-    "react-spinners": "^0.13.8",
+    "react-spinners": "^0.14.1",
     "sass": "^1.60.0",
     "use-clipboard-api": "^0.3.4"
   },
   "devDependencies": {
-    "@types/react": "18.0.33",
-    "eslint": "8.11.0",
-    "eslint-config-next": "^13",
-    "typescript": "5.0.3"
+    "@types/react": "18.3.7",
+    "eslint": "9.10.0",
+    "eslint-config-next": "^14.2.12",
+    "typescript": "5.6.2"
   }
 }
