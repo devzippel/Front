@@ -7,7 +7,13 @@ const nextConfig = {
 module.exports = nextConfig;
 
 module.exports = {
+  
   images: {
-    domains: ['puppetscoin.com'], // substitua com o domínio do seu site
-  },
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'puppetscoin.com',
+      },
+    ],
+  }
 }
