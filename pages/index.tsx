@@ -14,6 +14,7 @@ import Head from "next/head";
 
 
 const Home: NextPage = () => {
+  
 
   const [isCopied, setIsCopied] = useState(false);
   const address = '0xdA2c0CDf7d764F8C587380CAdF7129E5eCb7Efb7';
@@ -112,6 +113,7 @@ const Home: NextPage = () => {
                 alt="Hero asset, NFT marketplace"
                 quality={100}
                 className={styles.heroAsset}
+                priority
               />
             </div>
           </div>
@@ -195,6 +197,7 @@ const Home: NextPage = () => {
                 alt="Background gradient from red to blue"
                 quality={100}
                 className={styles.gradient}
+                priority
               />
             </div>
             <div className={styles.heroAssetFrame}>
@@ -265,7 +268,7 @@ const Home: NextPage = () => {
               height={40}
               alt="Find"
               quality={100}
-
+              
             />
           </Link>
         </div>
@@ -426,7 +429,8 @@ const Home: NextPage = () => {
                   <Image src="/logo.png"
                     width={250}
                     height={50}
-                    alt="Logo" />
+                    alt="Logo" 
+                    priority/>
                 </Link>
 
                 <div className={styles.listInline}>
