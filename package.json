@@ -2,8 +2,10 @@
   "name": "thirdweb-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+      "node": "20.17.0"
+    },
   "scripts": {
-    "build:digitalocean": "nvm install 18.17.0", 
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
