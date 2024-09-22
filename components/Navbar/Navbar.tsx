@@ -1,4 +1,4 @@
-import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
+import { ConnectWallet} from "@thirdweb-dev/react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
@@ -13,13 +13,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Footer from "../Footer/Footer";
 
 
-
 /**
  * Navigation bar that shows up on all pages.
  * Rendered in _app.tsx file above the page content.
  */
 export function Navbar() {
-  const address = useAddress();
+  //const address = useAddress();
   const [showStakeSubMenu, setShowStakeSubMenu] = useState(false);
   const [showMarketSubMenu, setShowMarketSubMenu] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
@@ -50,9 +49,9 @@ export function Navbar() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const toggleMenu = () => {
+  /*const toggleMenu = () => {
     setShowMenu(!showMenu);
-  };
+  };*/
 
   const menuClass = showMenu ? styles.showMenu : '';
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -84,23 +83,23 @@ export function Navbar() {
                 🖼  Stake NFT &nbsp;
                 </Link>
                 
-                <Link href="/mintBNB" className={styles.sider} onClick={handleSidebar}>
+                {/*<Link href="/mintBNB" className={styles.sider} onClick={handleSidebar}>
                 <Image src="/binance.png"
                     alt="Puppets Logo"
                     width={20}
                     height={20} />   
                     &nbsp;Mint NFT BNB
-                </Link>
+                </Link>-/}
 
-                <Link href="mintETH" className={styles.sider} onClick={handleSidebar}>
+                {/*<Link href="mintETH" className={styles.sider} onClick={handleSidebar}>
                 <Image src="/ETH.png"
                     alt="Puppets Logo"
                     width={13}
                     height={21} /> 
                     &nbsp;Mint NFT ETH
-                </Link>
+                </Link>*/}
 
-                <Link href="/nftbnb" className={styles.sider} onClick={handleSidebar}>
+              <Link href="/nftbnb" className={styles.sider} onClick={handleSidebar}>
                 <Image src="/binance.png"
                     alt="Puppets Logo"
                     width={20}
@@ -160,9 +159,9 @@ export function Navbar() {
                 </div>
               )}
             </div>
-           <Link href="/nft" className={styles.link}>
-            🎁 Mint 
-              </Link>
+           {/*<Link href="/nft" className={styles.link}>
+                🎁 Mint 
+            </Link>*/}
             <div
               className={styles.link}
               onMouseEnter={handleMarketMouseEnter}

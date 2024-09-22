@@ -1,8 +1,8 @@
 import { ThirdwebNftMedia } from "@thirdweb-dev/react";
 import { NFT } from "@thirdweb-dev/sdk";
 import React from "react";
-import { NFT_COLLECTION_ADDRESS } from "../../const/contractAddresses";
-import Skeleton from "../Skeleton/Skeleton";
+//import { NFT_COLLECTION_ADDRESS } from "../../const/contractAddresses";
+//import Skeleton from "../Skeleton/Skeleton";
 import styles from "./NFT.module.css";
 
 type Props = {

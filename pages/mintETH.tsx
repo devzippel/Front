@@ -1,5 +1,4 @@
 import {
-  MediaRenderer,
   useActiveClaimConditionForWallet,
   useAddress,
   useClaimConditions,
@@ -75,7 +74,7 @@ const Home: NextPage = () => {
       bnMaxClaimable = BigNumber.from(
         activeClaimCondition.data?.maxClaimableSupply || 0
       );
-    } catch (e) {
+    } catch  {
       bnMaxClaimable = BigNumber.from(1_000_000);
     }
 
@@ -84,7 +83,7 @@ const Home: NextPage = () => {
       perTransactionClaimable = BigNumber.from(
         activeClaimCondition.data?.maxClaimablePerWallet || 0
       );
-    } catch (e) {
+    } catch {
       perTransactionClaimable = BigNumber.from(1_000_000);
     }
 
@@ -101,7 +100,7 @@ const Home: NextPage = () => {
       } else {
         try {
           bnMaxClaimable = BigNumber.from(snapshotClaimable);
-        } catch (e) {
+        } catch {
           // fall back to default case
         }
       }
@@ -136,7 +135,7 @@ const Home: NextPage = () => {
           )) ||
         numberClaimed === numberTotal
       );
-    } catch (e) {
+    } catch {
       return false;
     }
   }, [
@@ -248,6 +247,7 @@ const Home: NextPage = () => {
                 alt="Background gradient from red to blue"
                 quality={100}
                 className={styles.puppets}
+                unoptimized
               />         
               
               {/* Amount claimed so far */}

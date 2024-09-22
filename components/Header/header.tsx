@@ -18,7 +18,7 @@ export default function Header() {
         "token"
     );
     const { data: tokenBalance } = useTokenBalance(tokenContract, address);
-
+  
 
     const [ethPrice, setEthPrice] = useState(" ");
     const [showText, setShowText] = useState(false);
@@ -74,11 +74,11 @@ export default function Header() {
                 </div>
             </section>
 
-           {/**  {address ? (
+             {address ? (
                 <section className={styles.navMiddle} >
                     <section>
                         Balance: ${" "}
-                        <span className={styles.blueText}>{(new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(Number(tokenBalance?.displayValue) * Number(ethPrice) * 1000))}</span>
+                        <span className={styles.blueText}>{(new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(Number(tokenBalance?.displayValue) * Number(ethPrice) * 1))}</span>
 
                     </section>
                 </section>
@@ -87,7 +87,7 @@ export default function Header() {
                     Balance: $ 0
                     <span className={styles.blueText}></span>
                 </section>
-            )}*/}
+            )}
 
         </div>
 

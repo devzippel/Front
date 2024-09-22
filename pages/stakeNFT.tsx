@@ -6,8 +6,7 @@ import {
   useContractRead,
   useOwnedNFTs,
   useTokenBalance,
-  Web3Button,
-  ThirdwebSDK,
+  Web3Button
 } from "@thirdweb-dev/react";
 import { BigNumber, ethers } from "ethers";
 import Image from "next/image";
@@ -24,13 +23,13 @@ import axios from "axios";
 import { PropagateLoader } from "react-spinners";
 import dotenv from 'dotenv';
 dotenv.config();
-const secretKey = process.env.SECRET_KEY;
+
 
 
 const Stake: NextPage = () => {
-  const sdk = new ThirdwebSDK("binance", {
+  /*const sdk = new ThirdwebSDK("binance", {
     clientId: process.env.YOUR_CLIENT_ID,
-  });
+  });*/
 
   const address = useAddress();
   const { contract: nftDropContract } = useContract(
@@ -185,7 +184,10 @@ const Stake: NextPage = () => {
           )}
         
           <p className={styles.date}>This staking will be active until 24/6/2024 or as long as the staking pool still has staking tokens</p>
-          <p className={styles.disclaimer}>DISCLAIMER: Even though this software has been thoroughly tested, this software's content and functionalities are still experimental. By using this software, you agree to hold puppetscoin.com harmless and not liable for any losses of the cryptocurrency assets. Please use this software at your own risk</p>
+          <p className={styles.disclaimer}>
+             DISCLAIMER: Even though this software has been thoroughly tested, this software&#39;s content and functionalities are still experimental. By using this software, you agree to hold puppetscoin.com harmless and not liable for any losses of the cryptocurrency assets. Please use this software at your own risk
+          </p>
+
         </div>
       </div>
     </div>

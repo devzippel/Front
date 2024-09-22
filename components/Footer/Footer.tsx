@@ -1,11 +1,8 @@
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { useState } from "react";
 import styles from "./Footer.module.css";
-import React, { Component } from 'react';;
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faInstagram, faDiscord, faTelegram, faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faCoins, faCopy } from '@fortawesome/free-solid-svg-icons';
+import {faCopy } from '@fortawesome/free-solid-svg-icons';
 
 
 

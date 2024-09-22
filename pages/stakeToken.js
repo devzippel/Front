@@ -1,9 +1,7 @@
 import {
-  ConnectWallet,
   useAddress,
   useContract,
   useContractRead,
-  useContractWrite,
   useTokenBalance,
   Web3Button,
 } from "@thirdweb-dev/react";
@@ -24,7 +22,7 @@ export default function Home() {
 
 
   // Initialize all the contracts
-  const { contract: staking, isLoading: isStakingLoading } = useContract(
+  const { contract: staking } = useContract(
     stakingContractAddress
   );
 
@@ -36,45 +34,46 @@ export default function Home() {
   );
 
   // Initialize token contracts
-  const { contract: stakingToken, isLoading: isStakingTokenLoading } =
+  const { contract: stakingToken } =
     useContract(stakingTokenAddress, "token");
-  const { contract: rewardToken, isLoading: isRewardTokenLoading } =
+  const { contract: rewardToken } =
     useContract(rewardTokenAddress, "token");
 
   // Token balances
   const { data: stakingTokenBalance, refetch: refetchStakingTokenBalance } =
     useTokenBalance(stakingToken, address);
-  const { data: rewardTokenBalance, refetch: refetchRewardTokenBalance } =
+  const {refetch: refetchRewardTokenBalance } =
     useTokenBalance(rewardToken, address);
 
   // Get staking data
   const {
     data: stakeInfo,
     refetch: refetchStakingInfo,
-    isLoading: isStakeInfoLoading,
   } = useContractRead(staking, "getStakeInfo", [address || "0"]);
 
   useEffect(() => {
     setInterval(() => {
       refetchData();
     }, 10000);
-  }, []);
+  }, [ ]);
 
   const refetchData = () => {
     refetchRewardTokenBalance();
     refetchStakingTokenBalance();
     refetchStakingInfo();
   };
-  const initialValue = 0;
+  //const initialValue = 0;
 
   /** Lógica do segundo input */
   const [retirar, setRetirar] = useState(stakeInfo && parseFloat(ethers.utils.formatEther(stakeInfo[0].toString())) || 0);
   const [novoRetirar, setNovoRetirar] = useState(0);
 
   useEffect(() => {
-    setRetirar(stakeInfo && parseFloat(ethers.utils.formatEther(stakeInfo[0].toString())) || 0);
-  }, [stakeInfo && parseFloat(ethers.utils.formatEther(stakeInfo[0].toString()))]);
-
+    if (stakeInfo && stakeInfo[0]) {
+      setRetirar(parseFloat(ethers.utils.formatEther(stakeInfo[0].toString())) || 0);
+    }
+  }, [stakeInfo]); // Use apenas `stakeInfo` como dependência
+  
   const handlePorcentagemRetirar = (porcentagem) => {
     const novoRetirar = (retirar * porcentagem / 100)-0.01;
     setNovoRetirar(novoRetirar);
@@ -262,7 +261,7 @@ export default function Home() {
                       Claim rewards!
                     </Web3Button>
                   </div>
-                  <p className={styles.disclaimer}>DISCLAIMER: Even though this software has been thoroughly tested, this software's content and functionalities are still experimental. By using this software, you agree to hold puppetscoin.com harmless and not liable for any losses of the cryptocurrency assets. Please use this software at your own risk</p>
+                  <p className={styles.disclaimer}>DISCLAIMER: Even though this software has been thoroughly tested, this software content and functionalities are still experimental. By using this software, you agree to hold puppetscoin.com harmless and not liable for any losses of the cryptocurrency assets. Please use this software at your own risk</p>
                 </main>
               </div>
 
